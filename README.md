@@ -15,6 +15,7 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 *To do before class*
 - Install R ([link](https://cloud.r-project.org/))
 - Install RStudio ([link](https://www.rstudio.com/products/rstudio/download/))
+
 *After installing both of these, you should ensure that when you click on the RStudio icon, it opens up.*
 
 ### Class 2: Research design
