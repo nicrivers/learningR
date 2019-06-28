@@ -18,6 +18,9 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 *After installing both of these, you should ensure that when you click on the RStudio icon, it opens up.*
 
+*Data sets*
+- We will work with the 2015 Canadian General Social Survey, available [here](https://www.dropbox.com/s/pwcmcbh51hd4830/gss-89M0034-E-2015-c-29-main.zip?dl=0).
+
 ### Class 2: Research design
 *Readings*
 - Kellstedt and Whitten, Ch. 3
