@@ -23,7 +23,7 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 *Lab*
 - Our lab this week will cover basic R functionality.  Key topics are presented [here](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html)
-- (R4DS)[https://r4ds.had.co.nz/], chapters 4 and 6 cover some of the same material.
+- [R4DS](https://r4ds.had.co.nz/), chapters 4 and 6 cover some of the same material.
 
 
 ### Class 2: Research design
