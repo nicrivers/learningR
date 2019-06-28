@@ -21,6 +21,8 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 *Data sets*
 - We will work with the 2015 Canadian General Social Survey, available [here](https://www.dropbox.com/s/pwcmcbh51hd4830/gss-89M0034-E-2015-c-29-main.zip?dl=0).
 
+What's (this)[https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html]
+
 ### Class 2: Research design
 *Readings*
 - Kellstedt and Whitten, Ch. 3
