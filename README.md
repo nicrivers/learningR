@@ -22,6 +22,7 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 - We will work with the 2015 Canadian General Social Survey, available [here](https://www.dropbox.com/s/pwcmcbh51hd4830/gss-89M0034-E-2015-c-29-main.zip?dl=0).
 
 *Lab*
+
 Our lab this week will cover basic R functionality.  Key topics are presented [here](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html)
 
 ### Class 2: Research design
