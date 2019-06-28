@@ -23,17 +23,12 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 - Kellstedt and Whitten, Ch. 3
 - World Bank, Ch. 3 ([link](http://documents.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf))
 
-### Class 3: Review of research methods
+### Class 3: Review of basic concepts in research methods
 
-            <button class="accordion">Week 1: Intro to R </button>
-            <div class="panel">
-                <ul>
-                    <i>Reading + exercises:</i> <a href="https://gupsych.github.io/data_skills/01_intro.html" target="_blank">Learning basics about R (Part 1)</a><br>
-                    <i>Reading + exercises:</i> <a href="https://gupsych.github.io/data_skills/02_intro.html" target="_blank">Learning basics about R (Part 2)</a><br>
-                    <i>Reading:</i> <a href="https://psyr.org/packages.html" target="_blank">More about packages</a><br>
-                    <i>Reading:</i> <a href="https://psyr.org/variables.html" target="_blank">More about variables</a><br>
-                    <i>Reading:</i> <a href="https://psyr.org/vectors.html" target="_blank">More about vectors</a><br>
-                    <i>Resource:</i> <a href="assets/rstudio-ide.pdf" target="_blank">Cheat sheet on how to use RStudio</a><br>
-                    <i>Resource:</i> <a href="assets/base-r.pdf" target="_blank">Cheat sheet on basic R functions</a>
-                </ul>            
-            </div>
+We will be building on your prior background in research methods.  This class will be a brief refresher of some concepts that you have already learned.  Before coming to this class, you should refresh your memory on these topics.  You can use any textbook, but you should ensure that you are familiar with the following concepts:
+- Measures of central tendency: mean, median, mode
+- Measures of variation: standard deviation
+- Distributions of variables; especially the normal distribution
+- Inference about the population based on a sample
+  - Hypothesis testing
+  - Standard error, p. value, confidence intervals
