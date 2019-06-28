@@ -33,5 +33,11 @@ We will be building on your prior background in research methods.  This class wi
 - Measures of variation: standard deviation
 - Distributions of variables; especially the normal distribution
 - Inference about the population based on a sample
-  - Hypothesis testing
+  - Hypothesis testing: what is it? How do you do it?
   - Standard error, p. value, confidence intervals
+  
+These topics are covered in:
+- Kellstedt and Whitten, Ch. 5-7.
+
+*Data sets*
+- We will work with the 2015 Canadian Community Health Survey, available [here](https://www.dropbox.com/s/urqpyqpcde84g5c/cchs-82M0013-E-2015-2016-Annual-component_F1.csv?dl=0).
