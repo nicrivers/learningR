@@ -28,6 +28,10 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 - Kellstedt and Whitten, Ch. 3
 - World Bank, Ch. 3 ([link](http://documents.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf))
 
+*Lab*
+- Our lab this week will focus on choosing a research topic and an appropriate research question.
+- You should come prepared to discuss your research interests, and in particular to discuss an *empirical* research question/hypothesis that you could work on this semester.
+
 ### Class 3: Review of basic concepts in research methods
 
 We will be building on your prior background in research methods.  This class will be a brief refresher of some concepts that you have already learned.  Before coming to this class, you should refresh your memory on these topics.  You can use any textbook, but you should ensure that you are familiar with the following concepts:
