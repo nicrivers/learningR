@@ -9,7 +9,8 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 ## Course materials
 
 ### Class 1: Introduction
-
+*Readings*
+- Kellstedt and Whitten, Ch. 1
 
 ### Class 2: Research design
 
