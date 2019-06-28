@@ -25,4 +25,15 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 ### Class 3: Review of research methods
 
-
+            <button class="accordion">Week 1: Intro to R </button>
+            <div class="panel">
+                <ul>
+                    <i>Reading + exercises:</i> <a href="https://gupsych.github.io/data_skills/01_intro.html" target="_blank">Learning basics about R (Part 1)</a><br>
+                    <i>Reading + exercises:</i> <a href="https://gupsych.github.io/data_skills/02_intro.html" target="_blank">Learning basics about R (Part 2)</a><br>
+                    <i>Reading:</i> <a href="https://psyr.org/packages.html" target="_blank">More about packages</a><br>
+                    <i>Reading:</i> <a href="https://psyr.org/variables.html" target="_blank">More about variables</a><br>
+                    <i>Reading:</i> <a href="https://psyr.org/vectors.html" target="_blank">More about vectors</a><br>
+                    <i>Resource:</i> <a href="assets/rstudio-ide.pdf" target="_blank">Cheat sheet on how to use RStudio</a><br>
+                    <i>Resource:</i> <a href="assets/base-r.pdf" target="_blank">Cheat sheet on basic R functions</a>
+                </ul>            
+            </div>
