@@ -13,7 +13,7 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 - Kellstedt and Whitten, Ch. 1
 
 *To do before class*
-- Install R [link](https://cloud.r-project.org/)
+- Install R ([link](https://cloud.r-project.org/))
 - Install RStudio [link](https://www.rstudio.com/products/rstudio/download/)
 
 ### Class 2: Research design
