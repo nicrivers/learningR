@@ -18,9 +18,6 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 *After installing both of these, you should ensure that when you click on the RStudio icon, it opens up.*
 
-*Data sets*
-- We will work with the 2015 Canadian General Social Survey, available [here](https://www.dropbox.com/s/pwcmcbh51hd4830/gss-89M0034-E-2015-c-29-main.zip?dl=0).
-
 *Lab*
 - Our lab this week will cover basic R functionality.  Key topics are presented [here](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html)
 - [R4DS](https://r4ds.had.co.nz/), chapters 4 and 6 cover some of the same material.
@@ -46,6 +43,7 @@ These topics are covered in:
 
 *Data sets*
 - We will work with the 2015 Canadian Community Health Survey, available [here](https://www.dropbox.com/s/urqpyqpcde84g5c/cchs-82M0013-E-2015-2016-Annual-component_F1.csv?dl=0).
+- We will work with the 2015 Canadian General Social Survey, available [here](https://www.dropbox.com/s/pwcmcbh51hd4830/gss-89M0034-E-2015-c-29-main.zip?dl=0).
 
 
 ### Class 4: Data sources, obtaining and manipulating data
