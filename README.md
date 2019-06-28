@@ -41,3 +41,31 @@ These topics are covered in:
 
 *Data sets*
 - We will work with the 2015 Canadian Community Health Survey, available [here](https://www.dropbox.com/s/urqpyqpcde84g5c/cchs-82M0013-E-2015-2016-Annual-component_F1.csv?dl=0).
+
+
+### Class 4: Data sources, obtaining and manipulating data
+
+
+
+### Class 5: Data visualisations
+
+
+### Class 6: Data modeling: regression #1
+
+
+### Class 7: Data modeling: regression #2
+
+
+### Class 8: Data modeling: regression #3
+
+
+### Class 9: Data modeling: regression #4
+
+
+### Class 10: Data modeling: difference-in-difference/longitudinal data
+
+
+### Class 11: Novel data sources OR advanced methods
+
+
+### Class 12: Presentations
