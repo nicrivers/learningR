@@ -52,8 +52,10 @@ These topics are covered in:
 
 
 ### Class 4: Data sources, obtaining and manipulating data
-To test a theory, you need data. This class will talk about where and how to obtain data.  We will look at publicly available data sets from the World Bank, Statistics Canada, and others.  We will talk about both micro-data (on individuals) and aggregate data (on regions).  We will also talk about how to work with data, including filtering it, merging multiple data sets together, and creating new variables based on data.
+To test a theory, you need data. This class will talk about where and how to obtain data.  We will look at publicly available data sets from the World Bank, Statistics Canada, and others.  We will talk about both micro-data (on individuals) and aggregate data (on regions).  We will also talk about how to work with data, including filtering it, merging multiple data sets together, grouping and summarising, and creating new variables based on data.
 
+*Readings*
+- R4DS, Chapter 5: https://r4ds.had.co.nz/transform.html (introduces the dplyr package for manipulating data)
 
 ### Class 5: Data visualisations
 We will talk about how to visualize data, and the appropriate types of visualizations for different types of data.
