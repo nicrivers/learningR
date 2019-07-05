@@ -10,6 +10,7 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 ### Class 1: Introduction
 Our class this week will include some discussion of what to expect during the course, including how to prepare for classes, assessment methods, topics, software, etc.  We will also discuss quantitative research, talk about cause and effect, and discuss what types of research questions it is possible to answer with the methods and research designs we will cover in the class.
+
 *Readings*
 - Kellstedt and Whitten, Ch. 1
 
