@@ -32,7 +32,16 @@ Our class this week will include some discussion of what to expect during the co
 - Scientific approach to research questions
 
 *Homework*
-???
+Submit a script file (with a .R extension) that does the following:
+1. Creates a data frame with data for: (see table below)
+    a. The population of each province in 2017.
+    b. The rate of opiod-related deaths measured in deaths per total population in each province in 2017.
+2. Finds the total number of opiod-related deaths in each province in 2017.
+3. Finds the total number of opioid-related deaths in all of Canada (excluding the territories) in 2017.
+
+Province | Population | Opiod death rate per 100,000 people
+-----------------------------------------------------------
+NL       | 528,817    | 16.6
 
 
 ### Class 2: Research design
