@@ -32,6 +32,7 @@ Our class this week will include some discussion of what to expect during the co
 - Scientific approach to research questions
 
 *Homework*
+
 Submit a script file (with a .R extension) that does the following:
 1. Creates a data frame with data for: (see table below)
     a. The population of each province in 2017.
