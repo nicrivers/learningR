@@ -39,9 +39,13 @@ Submit a script file (with a .R extension) that does the following:
 2. Finds the total number of opiod-related deaths in each province in 2017.
 3. Finds the total number of opioid-related deaths in all of Canada (excluding the territories) in 2017.
 
-Province | Population | Opiod death rate per 100,000 people
------------------------------------------------------------
-NL       | 528,817    | 16.6
+| Province | Population | Opiod death rate per 100,000 people |
+|----------|------------|-------------------------------------|
+|    NL    | 528,817    | 16.6                                |
+|    PE    | 152,021    | 9.5                                 |
+|    NS    | 953,869    | 8.4                                 |
+|    NB    | 759,655    | 13.1                                |
+|----------|------------|-------------------------------------|
 
 
 ### Class 2: Research design
