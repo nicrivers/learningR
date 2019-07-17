@@ -85,6 +85,9 @@ To test a theory, you need data. This class will talk about where and how to obt
 *Readings*
 - [R4DS, Chapter 5](https://r4ds.had.co.nz/transform.html) (introduces the dplyr package for manipulating data)
 
+*Additional Resources*
+- [RStudio data wrangling cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+
 *Lab*
 Work with a real data set.  Get it, manipulate it, look at some results.
 
@@ -104,6 +107,7 @@ Work with a real data set. Get it, manipulate it, and visualize the results.
 ??? Obtain, manipulate, and visualize data. ???
 
 *Additional resources*
+- [RStudio's ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 - Examples of graphs and code to reproduce them: https://www.r-graph-gallery.com/
 - Graphics for communication, R4DS, Chapter 28: https://r4ds.had.co.nz/graphics-for-communication.html (explains how to use advanced features of ggplot2 to enhance graphs)
 - What makes a good graph?: http://socviz.co/lookatdata.html#lookatdata (discussion of how to design your figures)
