@@ -13,16 +13,25 @@ Our class this week will include some discussion of what to expect during the co
 
 *Readings*
 - Kellstedt and Whitten, Ch. 1
+- [R4DS](https://r4ds.had.co.nz/), Ch. 4 and 6
 
 *To do before class*
 - Install R ([link](https://cloud.r-project.org/))
 - Install RStudio ([link](https://www.rstudio.com/products/rstudio/download/))
+- Go through these [basic exercises to familiarize you with R](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html)
 
 *After installing both of these, you should ensure that when you click on the RStudio icon, it opens up.*
 
 *Lab*
-- Our lab this week will cover basic R functionality.  Key topics are presented [here](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html)
-- [R4DS](https://r4ds.had.co.nz/), chapters 4 and 6 cover some of the same material.
+- Our lab this week will cover basic R functionality.
+- We will review the excercises above, and you will apply some of the lessons in the class.
+
+*Detailed topics*
+- Course format, evaluation, dates, etc.
+- Research designs and research methods
+- How we answer social science questions with quantitative data
+- Research designs and research methods
+- Scientific approach to research questions
 
 
 ### Class 2: Research design
