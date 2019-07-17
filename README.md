@@ -20,8 +20,6 @@ Our class this week will include some discussion of what to expect during the co
 - Install RStudio ([link](https://www.rstudio.com/products/rstudio/download/))
 - Go through these [basic exercises to familiarize you with R](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html)
 
-*After installing both of these, you should ensure that when you click on the RStudio icon, it opens up.*
-
 *Lab*
 - Our lab this week will cover basic R functionality.
 - We will review the excercises above, and you will apply some of the lessons in the class.
@@ -33,9 +31,13 @@ Our class this week will include some discussion of what to expect during the co
 - Research designs and research methods
 - Scientific approach to research questions
 
+*Homework*
+???
+
 
 ### Class 2: Research design
 Our class this week will focus on cause and effect.  We will talk about randomized controlled trials and observational studies, and when it is possible to make causal conclusions from these different research designs.  We will introduce "hurdles" that a research design must clear to claim a causal effect.  We will discuss research designs as comparisons, and introduce some alternative research designs to use in observational settings.
+
 *Readings*
 - Kellstedt and Whitten, Ch. 3
 - World Bank, Ch. 3 ([link](http://documents.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf))
@@ -44,7 +46,48 @@ Our class this week will focus on cause and effect.  We will talk about randomiz
 - Our lab this week will focus on choosing a research topic and an appropriate research question.
 - You should come prepared to discuss your research interests, and in particular to discuss an *empirical* research question/hypothesis that you could work on this semester.
 
-### Class 3: Review of basic concepts in research methods
+*Detailed topics*
+- What is cause and effect in the social sciences?
+- Four hurdles to establishing causality
+- What is a research design? Experiments (with random assignment) vs. observational studies.
+- Why random assignment helps for establishing causality.
+- Establishing causality in observational settings.
+- Multiple regression as a concept.
+
+*Homework*
+??? One-page write-up. One paragraph basic topic (why is it interesting). One paragraph research question/hypothesis. One paragraph on the type of data you would require to test the hypothesis.  One paragraph on a research design/comparison that could be used to test the hypothesis. ???Group work OK???
+
+
+### Class 3: Data sources, obtaining and manipulating data
+To test a theory, you need data. This class will talk about where and how to obtain data.  We will look at publicly available data sets from the World Bank, Statistics Canada, and others.  We will talk about both micro-data (on individuals) and aggregate data (on regions).  We will also talk about how to work with data, including filtering it, merging multiple data sets together, grouping and summarising, and creating new variables based on data.
+
+*Readings*
+- [R4DS, Chapter 5](https://r4ds.had.co.nz/transform.html) (introduces the dplyr package for manipulating data)
+
+*Lab*
+Work with a real data set.  Get it, manipulate it, look at some results.
+
+*Homework*
+??? Obtain, manipulate, merge, and summarise data. ???
+
+### Class 4: Data visualisations
+We will talk about how to visualize data, and the appropriate types of visualizations for different types of data.
+
+*Readings*
+- [R4DS, Chapter 3](https://r4ds.had.co.nz/data-visualisation.html) (introduces the ggplot2 package for graphing data)
+
+*Lab*
+Work with a real data set. Get it, manipulate it, and visualize the results.
+
+*Homework*
+??? Obtain, manipulate, and visualize data. ???
+
+*Additional resources*
+- Examples of graphs and code to reproduce them: https://www.r-graph-gallery.com/
+- Graphics for communication, R4DS, Chapter 28: https://r4ds.had.co.nz/graphics-for-communication.html (explains how to use advanced features of ggplot2 to enhance graphs)
+- What makes a good graph?: http://socviz.co/lookatdata.html#lookatdata (discussion of how to design your figures)
+
+### Class 5: Review of basic concepts in research methods
 We will be building on your prior background in research methods.  This class will be a brief refresher of some concepts that you have already learned.  Before coming to this class, you should refresh your memory on these topics.  You can use any textbook, but you should ensure that you are familiar with the following concepts:
 - Measures of central tendency: mean, median, mode
 - Measures of variation: standard deviation
@@ -52,32 +95,18 @@ We will be building on your prior background in research methods.  This class wi
 - Inference about the population based on a sample
   - Hypothesis testing: what is it? How do you do it?
   - Standard error, p. value, confidence intervals
-  
+
+*Readings*
 These topics are covered in:
 - Kellstedt and Whitten, Ch. 5-7.
+- They will also be covered in the text you used for your first research methods/statistics class.
+- Go through these [excercises to refresh your understanding of basic concepts in research methods] UPLOAD MATERIALS HERE.
 
-*Data sets*
-- We will work with the 2015 Canadian Community Health Survey, available [here](https://www.dropbox.com/s/urqpyqpcde84g5c/cchs-82M0013-E-2015-2016-Annual-component_F1.csv?dl=0).
-- We will work with the 2015 Canadian General Social Survey, available [here](https://www.dropbox.com/s/pwcmcbh51hd4830/gss-89M0034-E-2015-c-29-main.zip?dl=0).
+*Lab*
+- We will review these concepts in class.
 
-
-### Class 4: Data sources, obtaining and manipulating data
-To test a theory, you need data. This class will talk about where and how to obtain data.  We will look at publicly available data sets from the World Bank, Statistics Canada, and others.  We will talk about both micro-data (on individuals) and aggregate data (on regions).  We will also talk about how to work with data, including filtering it, merging multiple data sets together, grouping and summarising, and creating new variables based on data.
-
-*Readings*
-- R4DS, Chapter 5: https://r4ds.had.co.nz/transform.html (introduces the dplyr package for manipulating data)
-
-### Class 5: Data visualisations
-We will talk about how to visualize data, and the appropriate types of visualizations for different types of data.
-
-*Readings*
-- R4DS, Chapter 3: https://r4ds.had.co.nz/data-visualisation.html
-
-*Resources*
-- Examples of graphs and code to reproduce them: https://www.r-graph-gallery.com/
-- Graphics for communication, R4DS, Chapter 28: https://r4ds.had.co.nz/graphics-for-communication.html (explains how to use advanced features of ggplot2 to enhance graphs)
-- What makes a good graph?: http://socviz.co/lookatdata.html#lookatdata (discussion of how to design your figures)
-
+*Homework*
+Polling excercise.???
 
 ### Class 6: Data modeling: regression #1
 
