@@ -35,7 +35,7 @@ Our class this week will include some discussion of what to expect during the co
 Submit a script file (with a .R extension) that does the following:
 1. Creates a data frame with data for: (see table below)
     a. The population of each province in 2017.
-    b. The rate of opiod-related deaths measured in deaths per total population in each province in 2017.
+    b. The rate of opiod-related deaths measured in number of deaths per 100,000 people in each province in 2017.
 2. Finds the total number of opiod-related deaths in each province in 2017.
 3. Finds the total number of opioid-related deaths in all of Canada (excluding the territories) in 2017.
 
@@ -45,7 +45,13 @@ Submit a script file (with a .R extension) that does the following:
 |    PE    | 152,021    | 9.5                                 |
 |    NS    | 953,869    | 8.4                                 |
 |    NB    | 759,655    | 13.1                                |
-|----------|------------|-------------------------------------|
+|    QC    | 8,394,034  |9.8                                  |
+| ON       | 14,193,384 | 14.8                                |
+| MB       | 1,338,109  |12.3                                 |
+| SK       | 1,163,925  | 21.6                                |
+| AB       | 4,286,134  | 22.7                                |
+|BC        | 4,817,160  | 29.3                                |
+Data from [Statistics Canada](https://www150.statcan.gc.ca/n1/pub/12-581-x/2018000/pop-eng.htm?HPA=1) and the [Canadian Health Information Institute](https://www.cihi.ca/sites/default/files/document/opioid-related-harms-report-2018-en-web.pdf).
 
 
 ### Class 2: Research design
