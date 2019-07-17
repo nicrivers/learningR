@@ -52,7 +52,8 @@ Submit a script file (with a .R extension) that does the following:
 | SK       | 1,163,925  | 21.6                                |
 | AB       | 4,286,134  | 22.7                                |
 |BC        | 4,817,160  | 29.3                                |
-Data from [Statistics Canada](https://www150.statcan.gc.ca/n1/pub/12-581-x/2018000/pop-eng.htm?HPA=1) and the [Canadian Health Information Institute](https://www.cihi.ca/sites/default/files/document/opioid-related-harms-report-2018-en-web.pdf).
+
+Data from [Statistics Canada](https://www150.statcan.gc.ca/n1/pub/12-581-x/2018000/pop-eng.htm?HPA=1) and the [Canadian Insitute of Health Information](https://www.cihi.ca/sites/default/files/document/opioid-related-harms-report-2018-en-web.pdf).
 
 
 ### Class 2: Research design
