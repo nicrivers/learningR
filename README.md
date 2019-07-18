@@ -1,3 +1,7 @@
+---
+title: University of Ottawa, API6319, Fall 2019
+description: Professor Nic Rivers
+---
 # Welcome to API 6319
 
 This website hosts course resources, including readings, data sets, and resources for learning R.  I will keep this site updated throughout the semester.
