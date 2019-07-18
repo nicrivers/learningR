@@ -1,6 +1,5 @@
 ---
-title: University of Ottawa, API6319, Fall 2019
-description: Professor Nic Rivers
+title: University of Ottawa
 ---
 # Welcome to API 6319
 
