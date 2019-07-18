@@ -8,7 +8,7 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 ## Course materials
 
-### Class 1: Introduction
+### [Class 1: Introduction](https://github.com/nicrivers/uo_api_6319/blob/master/class_1.md#class-1-introduction)
 Our class this week will include some discussion of what to expect during the course, including how to prepare for classes, assessment methods, topics, software, etc.  We will also discuss quantitative research, talk about cause and effect, and discuss what types of research questions it is possible to answer with the methods and research designs we will cover in the class.
 
 *Readings*
