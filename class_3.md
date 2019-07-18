@@ -14,4 +14,6 @@ To test a theory, you need data. This class will talk about where and how to obt
 Work with a real data set.  Get it, manipulate it, look at some results.
 
 *Homework*
-??? Obtain, manipulate, merge, and summarise data. ???
+- Obtain the Canadian Community Health Survey for 2015-16 from ODESI in comma separate variable format (you'll need to be on campus to do this).  Save the .csv file on your computer in the /data directory for this week (you need to create this directory).  Get the documentation along with the data.
+- The CCHS asks respondents whether they have ever (in their lifetime) received the seasonal flu vaccine.  For each province, find the percentage of adults 65 years and older that have received the seasonal flu vaccine.  Drop from the analysis people who do not answer whether they received the flu vaccine.
+- Submit a script file that conducts the above analysis and reports the answers.  Also submit the answers.
