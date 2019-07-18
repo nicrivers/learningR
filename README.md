@@ -1,6 +1,3 @@
----
-title: University of Ottawa
----
 # Welcome to API 6319
 
 This website hosts course resources, including readings, data sets, and resources for learning R.  I will keep this site updated throughout the semester.
