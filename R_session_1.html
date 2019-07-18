@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Nic Rivers" />
@@ -343,18 +344,6 @@ summary {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -382,24 +371,34 @@ $(document).ready(function () {
 
 <div id="r-basics" class="section level1">
 <h1>R Basics</h1>
+<div id="installing-r" class="section level2">
+<h2>Installing R</h2>
+<p>For this course, it is recommended that you install R and RStudio on your computer (you need to install both of these separately, in this order): 1. Install R. Install the latest version in <a href="https://cloud.r-project.org/">this site</a>. The link is at the top of the page – you should choose the appropriate one depending on whether you have a Mac or Windows-based system. As indicated on the website, you want the <em>base</em> download since you are installing for the first time. 2. Install RStudio from <a href="https://www.rstudio.com/products/rstudio/download/">this site</a>. You want the free RStudio desktop version, and you’ll again need to indicate whether you have a windows or mac computer.</p>
+<p>You need both of these programs. R is the “engine” that will actually run all of the analysis that we will do in the course. However, it is not that user-friendly on its own. RStudio is a “dashboard” that lets us interact with R in a much more user-friendly way. This is why you require both of these programs. In this class you will always interact with the dashboard (RStudio), and not directly with the engine (R).</p>
+</div>
+<div id="starting-r" class="section level2">
+<h2>Starting R</h2>
+<p>To interact with R, click the RStudio icon on your computer, not the R icon. This can be confusing, since both have a symbol that includes the letter R. When you click the RStudio icon, you should be presented with a window that is divided up into a console (bottom left panel), environment window (top right), and files window (bottom right).</p>
+</div>
 <div id="basic-mathematical-operations" class="section level2">
 <h2>Basic mathematical operations</h2>
-<p>We will start of working with the Console, on the bottom-right of the RStudio screen. In this window, you can type commands, and the results will be printed in the window. Today’s class will introduce basic R functionality. First, we can use R to do basic mathematical operations. For example, we can tell R to add 1+1 by just putting that expression into the console and pressing enter. Not surprisingly, R returns the right answer. (The little [1] in square brackets just indicates that this is the first line of the answer – it’s useful when the answer stretches over more than one line). Try it yourself. (Note that in these notes, the stuff in gray shading is what you enter into R; the stuff in white frames is what R sends back to you).</p>
+<p>We will start off working with the Console, on the bottom-left of the RStudio screen. In this window, you can type commands, and the results will be printed in the window. We will begin by introducing basic R functionality, so you can see how R works.</p>
+<p>First, we can use R to do basic mathematical operations. For example, we can tell R to add 1+1 by just putting that expression into the console and pressing enter. Not surprisingly, R returns the right answer. (The little [1] in square brackets just indicates that this is the first line of the answer – it’s useful when the answer stretches over more than one line). Try it yourself. (Note that in these notes, the stuff in gray shading is what you enter into R; the stuff in white frames is what R sends back to you).</p>
 <pre class="r"><code>1+1</code></pre>
 <pre><code>## [1] 2</code></pre>
-<p>We can obviously use R to do more complicated work as well:</p>
+<p>We can use R to do more complicated work as well (don’t worry – we won’t spend our time in class doing math like this):</p>
 <pre class="r"><code>(3 + (7 - 3)^2) / 7</code></pre>
 <pre><code>## [1] 2.714286</code></pre>
 </div>
 <div id="assignment" class="section level2">
 <h2>Assignment</h2>
-<p>We’ve seen that it’s possible to use R as a calculator, by entering numbers and mathetical symbols. We can also assign values to variables, to make referring to them easier. For example, I can assign the value 1.87 (metres) to the variable that I will call “nic_height”:</p>
-<pre class="r"><code>nic_height &lt;- 1.87</code></pre>
-<p>Notice the assignment operator: “&lt;-”. This tells R that I want to put the value 187 into a variable that I am calling “nic_height”. I can now use that variable in calculations. For example, I can calculate my BMI by dividing my weight in kg by my height in m squared. Typing the name of the variable causes R to print its value to the console.</p>
-<pre class="r"><code>nic_weight &lt;- 74.5
+<p>We’ve seen that it’s possible to use R as a calculator, by entering numbers and mathetical symbols. We can also assign values to variables, to make referring to them easier. For example, I can assign the value 1.82 (metres) to the variable that I will call “nic_height”:</p>
+<pre class="r"><code>nic_height &lt;- 1.82</code></pre>
+<p>Notice the assignment operator: “&lt;-”. (It’s made up of two symbols beside each other.) This tells R that I want to put the value 1.82 into a variable that I am calling “nic_height”. (Note: it is also possible to use the “=” sign for assignment; the two work pretty much exactly the same, so you can choose which you use.) I can now use that variable in calculations. For example, I can calculate my BMI by dividing my weight in kg by my height in m squared. Typing the name of the variable causes R to print its value to the console.</p>
+<pre class="r"><code>nic_weight &lt;- 74
 nic_bmi &lt;- nic_weight / (nic_height^2)
 nic_bmi</code></pre>
-<pre><code>## [1] 21.30458</code></pre>
+<pre><code>## [1] 22.3403</code></pre>
 <p>If I re-assign a value to a variable name, it gets over-written:</p>
 <pre class="r"><code>nic_bmi &lt;- 20
 nic_bmi</code></pre>
@@ -408,48 +407,77 @@ nic_bmi</code></pre>
 <div id="vectors" class="section level2">
 <h2>Vectors</h2>
 <p>In the above examples, we stored a single value in a variable name. Another possibility is to store a vector (a whole bunch of values). We can tell R we want to do this using the “c()” notation, where c is short for column. For example, I could store the height of 3 individuals in a variable name:</p>
-<pre class="r"><code>heights &lt;- c(1.87, 1.55, 1.63)
+<pre class="r"><code>heights &lt;- c(1.82, 1.55, 1.63)
 heights</code></pre>
-<pre><code>## [1] 1.87 1.55 1.63</code></pre>
+<pre><code>## [1] 1.82 1.55 1.63</code></pre>
 <p>I can now do operations on the vector. For example, if I found out that the ruler I used to measure heights was off by 1 cm, I could remove 1 cm from all the heights:</p>
 <pre class="r"><code>heights - 0.01</code></pre>
-<pre><code>## [1] 1.86 1.54 1.62</code></pre>
-<p>With a vector of the weights of each individual, I could also calculate the BMI of each person:</p>
-<pre class="r"><code>weights &lt;- c(74.5, 60, 88)
+<pre><code>## [1] 1.81 1.54 1.62</code></pre>
+<p>With a vector of the weights of each individual, I could also calculate the BMI of each person, and assign it to a new variable called <code>bmis</code>.</p>
+<pre class="r"><code>weights &lt;- c(74, 60, 88)
 bmis &lt;- weights / (heights^2)
 bmis</code></pre>
-<pre><code>## [1] 21.30458 24.97399 33.12131</code></pre>
+<pre><code>## [1] 22.34030 24.97399 33.12131</code></pre>
 <p>Using vectors is very powerful – it allows us to avoid writing out the same calculation many times.</p>
+<p>You may have noticed something in doing the calculations above. We first subtracted 1cm from a vector with three numbers in it. R knew that we wanted to make a new vector with three numbers in which we removed 1cm from each item in our first vector. It did this calculation: <span class="math inline">\(\left[\array{1.87 \\ 1.55 \\ 1.63}\right] - \left[\array{0.01 \\ 0.01 \\ 0.01}\right]=\left[\array{1.86 \\ 1.54 \\ 1.62}\right]\)</span>. Notice how it “recycled” the 1 cm?</p>
+<p>In the second example, we divided one vector of length 3 by another vector of length 3. It did this calculation: <span class="math inline">\(\left[\array{1.87 \\ 1.55 \\ 1.63}\right] \div \left[\array{74.5^2 \\ 60^2 \\ 88^2}\right]=\left[\array{21.3 \\ 25.0 \\ 33.1}\right]\)</span>.</p>
+<p>However, it is not wise to add a vector of length 3 to a vector of length 2, for example, since R wouldn’t know which values to add to which. (Try it and see what happens).</p>
+<pre class="r"><code>c(1.87,1.55,1.63) + c(0.01,0.02)</code></pre>
+<pre><code>## Warning in c(1.87, 1.55, 1.63) + c(0.01, 0.02): longer object length is not
+## a multiple of shorter object length</code></pre>
+<pre><code>## [1] 1.88 1.57 1.64</code></pre>
+</div>
+<div id="variable-types" class="section level2">
+<h2>Variable types</h2>
+<p>In addition to putting numbers in vectors, we could also put in other things. Two other commonly used types of variables are logical (TRUE/FALSE) or character variables. For example:</p>
+<pre class="r"><code>characterNames &lt;- c(&quot;Harry&quot;, &quot;Ron&quot;, &quot;Hermione&quot;)
+isWitch &lt;- c(FALSE, FALSE, TRUE)</code></pre>
+</div>
+<div id="case-sensitivity-but-space-insensitivity" class="section level2">
+<h2>Case sensitivity but space insensitivity</h2>
+<p>R is case sensitive. That means that it distinguishes between upper and lower case letters. So for example, CharacterNames is not the same as characterNames. See for yourself. After creating the vector <code>characterNames</code> above, type <code>characterNames</code> in the console. Now type <code>CharacterNames</code>. What happens?</p>
+<p>However, for the most part, R doesn’t care about whitespace (spaces). You can leave lots of empty space in your commands, and even skip lines, and R will ignore the spaces:</p>
+<pre class="r"><code>1 + 2 +
+  3 +                         4 +
+  5 +        6</code></pre>
+<pre><code>## [1] 21</code></pre>
 </div>
 <div id="data-frames" class="section level2">
 <h2>Data frames</h2>
 <p>Data frames are a bunch of vectors joined together. For example, I make a data frame that held the information on heights and weights of the above individuals, and assign it the name df:</p>
-<pre class="r"><code>df &lt;- data.frame(heights, weights, bmis)
+<pre class="r"><code>df &lt;- data.frame(characterNames, heights, weights, bmis, isWitch)
 df</code></pre>
-<pre><code>##   heights weights     bmis
-## 1    1.87    74.5 21.30458
-## 2    1.55    60.0 24.97399
-## 3    1.63    88.0 33.12131</code></pre>
-<p>This result is a data frame with three columns, each representing a variable, and three observations, each representing one observation (person). This is the way that most data sets we will use are organized – rows are observations, and columns are variables.</p>
+<pre><code>##   characterNames heights weights     bmis isWitch
+## 1          Harry    1.82      74 22.34030   FALSE
+## 2            Ron    1.55      60 24.97399   FALSE
+## 3       Hermione    1.63      88 33.12131    TRUE</code></pre>
+<p>This result is a data frame with five columns, each representing a variable, and three observations, each representing one observation (person). This is the way that most data sets we will use are organized – rows are observations, and columns are variables.</p>
 <p>In a data frame, we can refer to a single column using the $ notation:</p>
 <pre class="r"><code>df$bmis</code></pre>
-<pre><code>## [1] 21.30458 24.97399 33.12131</code></pre>
+<pre><code>## [1] 22.34030 24.97399 33.12131</code></pre>
 <p>and we can also do calculations, including creating new columns, using this notation:</p>
 <pre class="r"><code>df$weights_after_diet &lt;- df$weights - 5
 df</code></pre>
-<pre><code>##   heights weights     bmis weights_after_diet
-## 1    1.87    74.5 21.30458               69.5
-## 2    1.55    60.0 24.97399               55.0
-## 3    1.63    88.0 33.12131               83.0</code></pre>
+<pre><code>##   characterNames heights weights     bmis isWitch weights_after_diet
+## 1          Harry    1.82      74 22.34030   FALSE                 69
+## 2            Ron    1.55      60 24.97399   FALSE                 55
+## 3       Hermione    1.63      88 33.12131    TRUE                 83</code></pre>
+<p>The data we will be using in this class will almost all be in the form of data frames. In a typical data frame, each “row” is an observation, and each “column” is a variable. For example, in the data frame <code>df</code>, there are three individuals, each of whom gets a row in the data frame. And there are several variables - height, weight, bmi, etc. - each of which gets a column in the data frame.</p>
+<p>The current data frame is small, and so we can easily see it in the console. But most of the data we work with will be much too big to see it in the console. One way to look at it in RStudio is to use the View() function. Type:</p>
+<pre class="r"><code>View(df)</code></pre>
+<p>and RStudio will open a new window that shows you the data frame in a spreadsheet-like environment. For large data frames, you will find it useful to use</p>
+<pre class="r"><code>head(df)</code></pre>
+<p>so that RStudio will print out just the first few rows of data in the console.</p>
 </div>
 <div id="functions" class="section level2">
 <h2>Functions</h2>
 <p>We have seen how it’s possible to use simple mathematical operators. In addition to these, R has an enormous amount of other functions built in. We won’t use anywhere near all of these, but chances are, if you want to do something to data, R has a function to do it. To illustrate, the following examples show how to take the mean and sum of data:</p>
 <pre class="r"><code>mean(heights)</code></pre>
-<pre><code>## [1] 1.683333</code></pre>
+<pre><code>## [1] 1.666667</code></pre>
 <pre class="r"><code>sum(bmis)</code></pre>
-<pre><code>## [1] 79.39988</code></pre>
-<p>It is quite easy to write your own functions, but this is beyond what we will cover in the course. To see an introduction to writing your own functions, see <a href="https://r4ds.had.co.nz/functions.html">R4DS</a>.</p>
+<pre><code>## [1] 80.43559</code></pre>
+<p>All functions are called by typing the name of the function and then some brackets (). In most functions, you then enter some <em>arguments</em> in the brackets. These are the inputs to the function. For example, in the mean() function, you enter a bunch of numbers that you want to take the mean of.</p>
+<p>It is quite easy to write your own functions, but this is beyond what we will cover in the course. It is possible to write your own functions in R, which is something that we will not have time to cover in this course. If you are interested in writing your own functions, go to <a href="https://r4ds.had.co.nz/functions.html">R4DS</a>.</p>
 </div>
 <div id="packages" class="section level2">
 <h2>Packages</h2>
@@ -457,31 +485,71 @@ df</code></pre>
 <pre class="r"><code>install.packages(&quot;tidyverse&quot;)</code></pre>
 <p>You only need to install the package once. Once it’s installed, you can use the package with this code:</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages ---------------------------------------------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
-<pre><code>## v ggplot2 3.1.1       v purrr   0.3.2  
+<pre><code>## -- Attaching packages ---------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## v ggplot2 3.1.0       v purrr   0.2.4  
 ## v tibble  2.1.1       v dplyr   0.8.0.1
-## v tidyr   0.8.3       v stringr 1.4.0  
-## v readr   1.3.1       v forcats 0.4.0</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+## v tidyr   0.7.2       v stringr 1.2.0  
+## v readr   1.1.1       v forcats 0.2.0</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <p>Now we can make use of special functions in the tidyverse package (more to come on that in later weeks).</p>
+<p>As an example of a (silly) package, we can try the cowsay package. Install this package on your computer by typing:</p>
+<pre class="r"><code>install.packages(&quot;cowsay&quot;)</code></pre>
+<p>in your console. The package is now downloaded onto your computer. You only need to do this once – the package is now available any time you run R. Now that the package is installed, you can use it. To use it, type:</p>
+<pre class="r"><code>library(cowsay)</code></pre>
+<p>in your console. It’s now loaded up on your computer and ready to go. You need to do this any time you restart R and want to use this package. Use it to make a cow say something:</p>
+<pre class="r"><code>say(what = &quot;I&#39;m learning R&quot;, by=&quot;cow&quot;)</code></pre>
+<pre><code>## Colors cannot be applied in this environment :( Try using a terminal or RStudio.</code></pre>
+<pre><code>## 
+##  ----- 
+## I&#39;m learning R 
+##  ------ 
+##     \   ^__^ 
+##      \  (oo)\ ________ 
+##         (__)\         )\ /\ 
+##              ||------w|
+##              ||      ||</code></pre>
+<p>(Note that this is a function with two arguments. Try making a cat say something.)</p>
 </div>
 <div id="workflow" class="section level2">
 <h2>Workflow</h2>
-<p>Up until now, we have been working in RStudio’s console. This provides us with instant feedback on everything we enter. Unfortunately, it doesn’t provide us with a lasting record of the commands we have entered. This is not a big problem for the simple calculations that we’ve done so far, but it will get to be a problem as we tackle bigger analyses. For those bigger analyses, we will instead use scripts. Open a new script by pressing the “+” button on RStudio’s top left corner; then indicate you want to create a new R script. This will create a blank script, into which you can enter commands. For example, enter the following commands in your script:</p>
+<p>Up until now, we have been working in RStudio’s console. This provides us with instant feedback on everything we enter. Unfortunately, it doesn’t provide us with a lasting record of the commands we have entered. This is not a big problem for the simple calculations that we’ve done so far, but it will get to be a problem as we tackle bigger analyses. For those bigger analyses, we will instead use scripts.</p>
+<p>A script is a little computer program that R will execute in order when you tell it to. You can think of it as a “recipe” for creating results from a data frame. In the script, you will tell R all of the steps to follow to generate some results.</p>
+<p>Open a new script by pressing the “+” button on RStudio’s top left corner; then indicate you want to create a new R script. This will create a blank script, into which you can enter commands. For example, enter the following commands in your script:</p>
 <pre class="r"><code>heights &lt;- c(1.87, 1.55, 1.63)
 weights &lt;- c(74.5, 60, 88)
 df &lt;- data.frame(heights, weights)
 df$bmis &lt;- df$weights / (df$heights ^ 2)
 mean(df$bmis)</code></pre>
 <p>You can run your script by highlighting the rows of your script and pressing ctrl+R (orm CMD+R on a mac). You can run the script one row at a time, or all at once. When you press ctrl+R, RStudio sends the script to the console, where it is executed. What will this script do?</p>
-<p>You can save the script, so that you can return to it later, either to add on to it, or to correct it. For example, perhaps we find data on another person with a height of 1.77 and a weight of 82.1. We can easily add this person to our data and re-run the script (do this). Or perhaps we find a mistake in our calculations. Rather than having to re-type them all in, we just correct the mistake and re-run. You can think of the script as the recipe that is used to produce the output, and the console as the kitchen. R lets you input a recipe (script) and run it in the kitchen (console). My suggestion is that you use the console directly to figure out which commands to run, and to examine your data, and then record the critical commands in the script.</p>
+<p>You can save the script, so that you can return to it later, either to add on to it, or to correct it. For example, perhaps we find data on another person with a height of 1.77 and a weight of 82.1. We can easily add this person to our data and re-run the script (do this). Or perhaps we find a mistake in our calculations. Rather than having to re-type them all in, we just correct the mistake and re-run. You can think of the script as the recipe that is used to produce the output, and the console as the kitchen. R lets you input a recipe (script) and run it in the kitchen (console). My suggestion is that you use the console directly to figure out which commands to run, and to examine your data, and then record the critical commands in the script. For example, although you might enter <code>View(df)</code> in the console to take a look at your data, you would never enter this in the script, since it’s not a command that would be required to produce the results you want.</p>
+<p>When you’re making a script, it is very useful to document what you’re doing. You can tell R you’re documenting your script by starting the line with a # sign. Documenting your work will help you understand what you’re doing and save time when you have to revisit your work. For example, the script above, with documentation, might look like this:</p>
+<pre class="r"><code># A simple program to illustrate how to write a script in R
+# Created on July 20, 2019 by Nic Rivers
+
+# First enter the heights of three individuals.  
+# I made these up, but if I didn&#39;t it would be good to name the source they came from.
+heights &lt;- c(1.87, 1.55, 1.63)
+# Next enter their weights
+weights &lt;- c(74.5, 60, 88)
+# Put these two vectors into a data frame.
+df &lt;- data.frame(heights, weights)
+# Calculate the BMI for each individual from height and weight
+df$bmis &lt;- df$weights / (df$heights ^ 2)
+# Find the average BMI for the three individuals and print it to the screen
+mean(df$bmis)</code></pre>
+</div>
+<div id="directories" class="section level2">
+<h2>Directories</h2>
+<p>Where should you put your scripts and other files? Create a directory on your computer in which to store them. On my computer, I have a directory for API6319_2019. I then have a subdirectory for each class – class1, class2, etc. I have saved this file in a subdirectory of class1 called scripts. When we start working with real data in future classes, I will have other subdirectories of class1 called data.</p>
+<p>Save your script in the scripts directory as indicated above. Now close RStudio, and open it again by double-clicking the script you just saved. RStudio should open up with a new console and your script in the scripts window. When you start RStudio by clicking one of your scripts, it recognizes that directory as the “working directory”, which means that it will look in that spot for any other files (like data) that you refer it to. We will use this approach in the future.</p>
 </div>
 <div id="getting-help" class="section level2">
 <h2>Getting help</h2>
 <p>You will need help. R provides help on each function that it contains. For example, you can get help on the mean() functioon that we used earlier. To do so, just enter the name of the function in the console, preceded by ?</p>
-<pre class="r"><code>?mean</code></pre>
+<pre class="r"><code>?mean
+?say</code></pre>
 <p>Often, you will find it useful to get help from outside of RStudio. If you google your question, precded by R, you will often find what you want. For example, we took the mean of a vector above. To get help with this, try googling “R mean of a vector”. You will find lots of useful results.</p>
 <p>Finally, there are oodles of tutorials and guides to conducting analysis in R available on the internet. A particularly useful one is <a href="https://r4ds.had.co.nz/">“R for data science”</a>. Many of the problems you will run into will be answered in this book, which uses easy language and is targetted at beginners.</p>
 </div>
@@ -504,6 +572,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
