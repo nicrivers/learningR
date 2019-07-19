@@ -49,4 +49,4 @@ Submit a Word or HTML document that you create in RStudio using RMarkdown that d
 
 Data from [Statistics Canada](https://www150.statcan.gc.ca/n1/pub/12-581-x/2018000/pop-eng.htm?HPA=1) and the [Canadian Insitute of Health Information](https://www.cihi.ca/sites/default/files/document/opioid-related-harms-report-2018-en-web.pdf).
 
-The template for your homework is [here](https://github.com/nicrivers/uo_api_6319/homework_1_student.Rmd).  Save it to a directory you will use for this week's work.  Open it up (it should open in RStudio).  Go through the instructions in the file.
+The template for your homework is [here](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/homework_1_student.Rmd).  Save it to a directory you will use for this week's work.  Open it up (it should open in RStudio).  Go through the instructions in the file.
