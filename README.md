@@ -18,22 +18,16 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 ### [Class 5: Review of foundational concepts in research methods](https://nicrivers.github.io/uo_api_6319/class_5.html)
 
-### Class 6: Data modeling: regression #1
+### [Class 6: Data modeling: regression #1](https://nicrivers.github.io/uo_api_6319/class_6.html)
 
+### [Class 7: Data modeling: regression #2](https://nicrivers.github.io/uo_api_6319/class_7.html)
 
-### Class 7: Data modeling: regression #2
+### [Class 8: Data modeling: regression #3](https://nicrivers.github.io/uo_api_6319/class_8.html)
 
+### [Class 9: Data modeling: regression #4](https://nicrivers.github.io/uo_api_6319/class_9.html)
 
-### Class 8: Data modeling: regression #3
+### [Class 10: Data modeling: difference-in-difference/longitudinal data](https://nicrivers.github.io/uo_api_6319/class_10.html)
 
-
-### Class 9: Data modeling: regression #4
-
-
-### Class 10: Data modeling: difference-in-difference/longitudinal data
-
-
-### Class 11: Novel data sources OR advanced methods
-
+### [Class 11: Novel data sources OR advanced methods](https://nicrivers.github.io/uo_api_6319/class_11.html)
 
 ### Class 12: Presentations
