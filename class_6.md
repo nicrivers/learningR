@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 ## Class 6: Simple regression
 
 Regression is the main tool used by quantitative researchers.
