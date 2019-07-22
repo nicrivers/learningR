@@ -16,7 +16,7 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 ### [Class 4: Data visualisations](https://nicrivers.github.io/uo_api_6319/class_4.html)
 
-### [Class 5: Review of basic concepts in research methods](https://nicrivers.github.io/uo_api_6319/class_5.html)
+### [Class 5: Review of foundational concepts in research methods](https://nicrivers.github.io/uo_api_6319/class_5.html)
 
 ### Class 6: Data modeling: regression #1
 
