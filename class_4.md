@@ -22,6 +22,7 @@ We will talk about how to visualize data, and the appropriate types of visualiza
 - Make a plot that illustrates the average subjective well-being (SLM_01) for males and females by age, such that it is possible to compare between males and females.
 - Make a plot that illustrates the percent of people that say that life is "A bit stressful" or more, according to how much income they report.
 - Make sure that both of your plots are well-labelled and clear.
+- Submit your work in Word or HTML format, by using RMarkdown.
 
 *Additional resources*
 - [RStudio's ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
