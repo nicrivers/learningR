@@ -1,0 +1,46 @@
+---
+title: 'Homework #2'
+author: "Student name"
+date: "7/22/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Rates of flu vaccination amongst adults 65 years and older in Canadian provinces
+
+Here is where you will describe what you do.
+
+First you will need to load the tidyverse library as well as the data.
+
+```{r, message=FALSE, warning=FALSE}
+# Load the tidyverse library
+library(tidyverse)
+
+# Load the data
+# Here, you will tell R where to find the data, using code like:
+# cchs <- read_csv("location_of_file_here.csv")
+```
+
+Now you will explain how you process the data, and put code below to do that:
+
+```{r}
+# Step 1. Select the variables you are intersted in
+
+# Step 2. Drop observations where flu shot status is not recorded.
+# Hint: You'll need to look at the codebook to understand this.
+
+# Step 3. Create a new dummy variable that indicates if people have ever had flu shot.  The variable should take on a value of 1 if people have had a flu shot and 0 otherwise.
+
+# Step 4. Group by province.
+
+# Step 5. Find the total number of respondents in each province, as well as the total number of people with flu shots.
+
+# Step 6. Find the perent of people with flu shots using information from 5.
+
+# Step 7. Report results.
+```
+
+Finally, you will finish with any conclusions.
