@@ -20,4 +20,10 @@ These topics are covered in:
 - We will review these concepts in class.
 
 *Homework*
-Polling excercise.???
+- Download the 2016 Canadian Census PUMF Individuals file from ODESI.
+- Filter the data so that it excludes non-permanent residents and people who do not declare their immigration status.
+- Filter the data so that it includes only females 40-44 years old.
+- Filter the data so it only includes people that have income from wages greater than $1. Drop people for whom wage data is missing (see codebook).
+- Compare the mean wage for immigrants to non-immigrants for this group of people.
+- How confident are you that there really is a difference in wages for immigrants and non-immigrants based on this sample? (conduct a t-test to find the answer).
+- Submit your work in a Word or HTML file that you create with RMarkdown so that both your code and results are visible.
