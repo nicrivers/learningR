@@ -18,3 +18,5 @@ Work with a real data set.  Get it, manipulate it, look at some results.
 - The CCHS asks respondents whether they have ever (in their lifetime) received the seasonal flu vaccine.  It also records which province each respondent resides in.  
 - For each province, estimate the percentage of adults 65 years and older that have received the seasonal flu vaccine (in their lifetime).  Drop from the analysis people who do not answer whether they received the flu vaccine.
 - Submit a Word file that you create in RMarkdown that conducts the above analysis and reports the answers. 
+
+The template for your homework is [here](https://github.com/nicrivers/uo_api_6319/blob/master/homework_2_student.Rmd). Save it to a directory you will use for this week's work (right click the link and choose the option that allows you to save the file; choose the directory). Open it up in the directory you saved it (it should open in RStudio). Go through the instructions in the file.
