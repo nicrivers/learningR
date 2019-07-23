@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-## Class 2: Research design
+## Class 5: Research design
 
 Our class this week will focus on cause and effect.  We will talk about randomized controlled trials and observational studies, and when it is possible to make causal conclusions from these different research designs.  We will introduce "hurdles" that a research design must clear to claim a causal effect.  We will discuss research designs as comparisons, and introduce some alternative research designs to use in observational settings.
 
