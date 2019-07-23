@@ -22,5 +22,5 @@ Our class this week will focus on cause and effect.  We will talk about randomiz
 - Multiple regression as a concept.
 
 *Homework*
-??? One-page write-up. One paragraph basic topic (why is it interesting). One paragraph research question/hypothesis. One paragraph on the type of data you would require to test the hypothesis.  One paragraph on a research design/comparison that could be used to test the hypothesis. ???Group work OK???
+Research proposal.  Instructions are provided here.
 
