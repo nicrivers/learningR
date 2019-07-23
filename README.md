@@ -10,13 +10,13 @@ The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayj
 
 ### [Class 1: Introduction](https://nicrivers.github.io/uo_api_6319/class_1.html)
 
-### [Class 2: Data sources, obtaining and manipulating data](https://nicrivers.github.io/uo_api_6319/class_3.html)
+### [Class 2: Data sources, obtaining and manipulating data](https://nicrivers.github.io/uo_api_6319/class_2.html)
 
-### [Class 3: Data visualisations](https://nicrivers.github.io/uo_api_6319/class_4.html)
+### [Class 3: Data visualisations](https://nicrivers.github.io/uo_api_6319/class_3.html)
 
-### [Class 4: Review of foundational concepts in research methods](https://nicrivers.github.io/uo_api_6319/class_5.html)
+### [Class 4: Review of foundational concepts in research methods](https://nicrivers.github.io/uo_api_6319/class_4.html)
 
-### [Class 5: Research design](https://nicrivers.github.io/uo_api_6319/class_2.html)
+### [Class 5: Research design](https://nicrivers.github.io/uo_api_6319/class_5.html)
 
 ### [Class 6: Data modeling: regression #1](https://nicrivers.github.io/uo_api_6319/class_6.html)
 
