@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-### Class 3: Data sources, obtaining and manipulating data
+### Class 2: Data sources, obtaining and manipulating data
 To test a theory, you need data. This class will talk about where and how to obtain data.  We will look at publicly available data sets from the World Bank, Statistics Canada, and others.  We will talk about both micro-data (on individuals) and aggregate data (on regions).  We will also talk about how to work with data, including filtering it, merging multiple data sets together, grouping and summarising, and creating new variables based on data.
 
 *Readings*
