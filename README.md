@@ -4,7 +4,7 @@ This website hosts course resources, including readings, data sets, and resource
 
 ## Course syllabus
 
-The course syllabus is available [here](https://www.dropbox.com/s/4vv7eqs66glayji/Detailed%20course%20syllabus.docx?dl=0).
+The official course syllabus is available [here](https://github.com/nicrivers/uo_api_6319/blob/master/API6319A_rivers_fall2019.DOCX?raw=true).
 
 ## Course materials
 
