@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-### Class 4: Data visualisations
+### Class 3: Data visualisations
 We will talk about how to visualize data, and the appropriate types of visualizations for different types of data.
 
 *Readings*
