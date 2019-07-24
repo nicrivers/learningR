@@ -31,3 +31,12 @@ The official course syllabus is available [here](https://github.com/nicrivers/uo
 ### [Class 11: Novel data sources OR advanced methods](https://nicrivers.github.io/uo_api_6319/class_11.html)
 
 ### Class 12: Presentations
+
+
+## Major assignments
+
+### Proposal
+
+### Presentation
+
+### Term paper
