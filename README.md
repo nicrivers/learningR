@@ -7,6 +7,7 @@ This website hosts course resources, including readings, data sets, and resource
 The official course syllabus is available [here](https://github.com/nicrivers/uo_api_6319/blob/master/API6319A_rivers_fall2019.DOCX?raw=true).
 
 ## Course materials
+*Note that slides will be posted in the links below immediately following the class.*
 
 ### [Class 1: Introduction](https://nicrivers.github.io/uo_api_6319/class_1.html)
 
