@@ -11,7 +11,7 @@ To test a theory, you need data. This class will talk about where and how to obt
 - [RStudio data wrangling cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
 *Lab*
-Work with a real data set.  Get it, manipulate it, look at some results.
+- We will work through [these](htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/rsession_2.html) excercises in class.  You will find it useful to review them before class.
 
 *Homework*
 - Obtain the Canadian Community Health Survey for 2015-16 from ODESI in comma separated variable format.  Get the documentation along with the data.  Save the file on your computer in the /data directory for this week (you need to create this directory).  Unzip the folder so that you can see what's in it (it should have a .csv file as well as a pdf explaining the file).  
