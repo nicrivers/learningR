@@ -12,11 +12,10 @@ Our class this week will include some discussion of what to expect during the co
 *To do before class*
 - Install R ([link](https://cloud.r-project.org/))
 - Install RStudio ([link](https://www.rstudio.com/products/rstudio/download/))
-- Go through these [basic exercises to familiarize you with R](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html)
 
 *Lab*
 - Our lab this week will cover basic R functionality.
-- We will review the excercises above, and you will apply some of the lessons in the class.
+- We will go through these [basic exercises to familiarize you with R](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_1.html). 
 
 *Detailed topics*
 - Course format, evaluation, dates, etc.
