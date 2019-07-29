@@ -763,6 +763,30 @@ new_data</code></pre>
 ##  8     9        24.0
 ##  9     0        23  
 ## 10     6        22</code></pre>
+<p>Excercise: find the rate of union membership in different occupations (i.e., what percent of people are in a union in different occupational categories?). (Try before you look.) Use the variable <code>NOC_10</code> for occupational categories. See the codebook for definitions.</p>
+<pre class="r"><code>dat %&gt;%
+  # Only keep people that are employed
+  filter(LFSSTAT == 1) %&gt;%
+  # Create a dummy variable that indicates union status
+  mutate(in_union = as.numeric(UNION %in% c(1,2))) %&gt;%
+  # Group into occupation categories
+  group_by(NOC_10) %&gt;%
+  # Summarise to find average union membership in each NOC
+  summarise(mean_union_membership = mean(in_union)) %&gt;%
+  arrange(desc(mean_union_membership))</code></pre>
+<pre><code>## # A tibble: 10 x 2
+##    NOC_10 mean_union_membership
+##     &lt;dbl&gt;                 &lt;dbl&gt;
+##  1      5                0.574 
+##  2      4                0.544 
+##  3     10                0.343 
+##  4      8                0.285 
+##  5      2                0.268 
+##  6      3                0.243 
+##  7      6                0.166 
+##  8      7                0.151 
+##  9      9                0.137 
+## 10      1                0.0698</code></pre>
 </div>
 <div id="other-tools-with-brief-examples" class="section level2">
 <h2>Other tools (with brief examples)</h2>
