@@ -8,7 +8,7 @@ We will talk about how to visualize data, and the appropriate types of visualiza
 - [R4DS, Chapter 3](https://r4ds.had.co.nz/data-visualisation.html) (introduces the ggplot2 package for graphing data)
 
 *Lab*
-- Work with a real data set. Get it, manipulate it, and visualize the results.
+- Work with a real data set. Get it, manipulate it, and visualize the results: we will go through the following [exercises](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_3.html) in class.
 - We will work with data from the [UN of refugee flows](http://data.un.org/Data.aspx?q=refugees&d=UNHCR&f=indID%3aType-Ref)
     * Graph refugee intake to Canada over time.
     * Graph countries of refugee intake to Canada in 2016.
