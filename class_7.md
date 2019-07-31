@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 ## Multiple regression
 
 In multiple regression, you can estimate the relationship between a dependent and independent variable while *controlling* for other factors.
