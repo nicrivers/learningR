@@ -14,7 +14,6 @@ We will be building on your prior background in research methods.  This class wi
 These topics are covered in:
 - Kellstedt and Whitten, Ch. 5-7.
 - They will also be covered in the text you used for your first research methods/statistics class.
-- Go through these [excercises to refresh your understanding of basic concepts in research methods] UPLOAD MATERIALS HERE.
 
 *Lab*
 - We will review these concepts in class.
