@@ -11,7 +11,7 @@ This class will focus on simple regression, which is used to estimate the relati
 - Kellstedt and Whitten, Chapter 8.
 
 ### Lab
-- We will illustrate simple regression with a data set.
+- We will [illustrate simple regression with a data set](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_6.html).
 
 ### Homework
 - Obtain the data file vote_data.csv, available [here](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/vote_data.csv).  (Right click the link and save it to a /data directory in your homework folder for this week).  The file has three variables:
