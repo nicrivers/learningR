@@ -16,7 +16,7 @@ These topics are covered in:
 - They will also be covered in the text you used for your first research methods/statistics class.
 
 *Lab*
-- We will review these concepts in class.
+- [We will review these concepts in class](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_4.html).
 
 *Homework*
 - Download the 2016 Canadian Census PUMF Individuals file from ODESI.
