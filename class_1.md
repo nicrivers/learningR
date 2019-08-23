@@ -24,6 +24,9 @@ Our class this week will include some discussion of what to expect during the co
 - Research designs and research methods
 - Scientific approach to research questions
 
+*Slides*
+Slides are available [here](https://github.com/nicrivers/uo_api_6319/blob/master/lecture1.pdf)
+
 *Homework*
 
 Submit a Word or HTML document that you create in RStudio using RMarkdown that does the following:
