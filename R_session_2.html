@@ -7,7 +7,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Nic Rivers" />
@@ -344,6 +343,18 @@ summary {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
 
@@ -387,7 +398,7 @@ summary {
 library(tidyverse)</code></pre>
 <p>Now close the script, find it in your finder/windows explorer, and double-click to open it. This makes the directory the script is in be the working directory (where R looks for files).</p>
 <p>Now we are ready to load the data. The tidyverse package contains a <code>read_csv()</code> function that we will use for this. We will read the file, and assign it to an object that we can name. For example, I will assign it to an object that I call <code>dat</code>. (notice how RStudio helps with autocomplete of file names once you open the double quotes).</p>
-<pre class="r"><code>dat &lt;- read_csv(&quot;data/lfs-71M0001-E-2019-february.zip&quot;)</code></pre>
+<pre class="r"><code>dat &lt;- read_csv(&quot;data/lfs2019/lfs-71M0001-E-2019-february_F1.csv&quot;)</code></pre>
 <p>Take a look at what’s in the file by typing <code>dat</code> in the console. Another way to look at the file is to <code>glimpse()</code> it. Try <code>glimpse(dat)</code>. And you can also use <code>View(dat)</code> to see what it looks like. Either way, you should see that <code>dat</code> is a data.table with about 100,000 observations and about 60 variables. As usual, and observation (an individual in the survey) appears as a row, and a variable appears as a column. The column names are a bit cryptic. To understand what they mean, refer to the pdf documentation, which you downloaded.</p>
 </div>
 <div id="filtering" class="section level2">
@@ -665,7 +676,7 @@ new_data</code></pre>
 ##  9     11.2    42              471.
 ## 10     44.0    35             1539.
 ## # ... with 46,452 more rows</code></pre>
-<p>As we talked about last week, sometimes it will be useful to create dummy variables. Let’s create a dummy variable that equals 1 for females, and another that equals 1 for people in unions that live in Ottawa (note the <code>&amp;</code> operator - this says equals 1 if the observation is in a union AND lives in Ottawa):</p>
+<p>Sometimes it will be useful to create logical variables that take on a value of 1 (if TRUE) and 0 (if FALSE). These types of variables are commonly referred to as dummy variables, and we’ll use them lots throughout the course. Let’s create a dummy variable that equals 1 for females, and another that equals 1 for people who are in unions AND live in Ottawa (note the <code>&amp;</code> operator - this says equals 1 if the observation is in a union AND lives in Ottawa):</p>
 <pre class="r"><code>dat %&gt;%
   mutate(female = as.numeric(SEX == 2),
          ottawa_union = as.numeric(UNION == 1 &amp; CMA == 3)) %&gt;%
@@ -683,6 +694,51 @@ new_data</code></pre>
 ##  8     2    NA     0      1            0
 ##  9     2    NA     9      1            0
 ## 10     1    NA     0      0            0
+## # ... with 99,993 more rows</code></pre>
+<p>The data that we downloaded is not straightforward to interpret. For example, look at the <code>SEX</code> variable – it takes on values of 1 and 2. It would be impossible to know which of these corresponds to males and which to females without looking at the codebook. We can #recode# variables to make them easier for us to read. For example, let’s recode the <code>SEX</code> variable as a categorical (recall that R calls these factor variables) variable:</p>
+<pre class="r"><code>dat %&gt;% 
+  select(SEX) %&gt;%
+  mutate(gender = factor(SEX, levels=c(1,2), labels=c(&quot;male&quot;, &quot;female&quot;)))</code></pre>
+<pre><code>## # A tibble: 100,003 x 2
+##      SEX gender
+##    &lt;dbl&gt; &lt;fct&gt; 
+##  1     1 male  
+##  2     2 female
+##  3     2 female
+##  4     2 female
+##  5     1 male  
+##  6     1 male  
+##  7     2 female
+##  8     2 female
+##  9     2 female
+## 10     1 male  
+## # ... with 99,993 more rows</code></pre>
+<p>we can also do this for other variables if we like. For example, the EDUC variable is similarly uninformative, but looking at the codebook allows us to recode it in a more useful format:</p>
+<pre class="r"><code>dat %&gt;% 
+  select(SEX, EDUC) %&gt;%
+  mutate(gender = factor(SEX, levels=c(1,2), labels=c(&quot;male&quot;, &quot;female&quot;)),
+         education = factor(EDUC, 
+                            levels=c(0,1,2,3,4,5,6), 
+                            labels=c(&quot;0 to 8 years&quot;,
+                                     &quot;Some high school&quot;,
+                                     &quot;High school graduate&quot;,
+                                     &quot;Some postsecondary&quot;,
+                                     &quot;Postsecondary certificate or diploma&quot;,
+                                     &quot;Bachelor&#39;s degree&quot;,
+                                     &quot;Above Bachelor&#39;s degree&quot;)))</code></pre>
+<pre><code>## # A tibble: 100,003 x 4
+##      SEX  EDUC gender education                           
+##    &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;  &lt;fct&gt;                               
+##  1     1     4 male   Postsecondary certificate or diploma
+##  2     2     4 female Postsecondary certificate or diploma
+##  3     2     1 female Some high school                    
+##  4     2     4 female Postsecondary certificate or diploma
+##  5     1     4 male   Postsecondary certificate or diploma
+##  6     1     2 male   High school graduate                
+##  7     2     5 female Bachelor&#39;s degree                   
+##  8     2     2 female High school graduate                
+##  9     2     1 female Some high school                    
+## 10     1     2 male   High school graduate                
 ## # ... with 99,993 more rows</code></pre>
 </div>
 <div id="grouped-summaries" class="section level2">
@@ -702,7 +758,7 @@ new_data</code></pre>
 ##   mean_wage
 ##       &lt;dbl&gt;
 ## 1      27.1</code></pre>
-<p>Now we can see that the mean wage in the sample is 27, 2 per hour. We can also ask for other summary statistics. Let’s see how:</p>
+<p>Now we can see that the mean wage, amongst survey respondents who report a wage, in the sample is $27.1 per hour. (Just to emphasize – this mean only includes people who actually report an hourly wage, so needs to be interpreted in that light.) We can also ask for other summary statistics. Let’s see how:</p>
 <pre class="r"><code>dat %&gt;%
   filter(!is.na(HRLYEARN)) %&gt;%
   summarise(mean_wage = mean(HRLYEARN),
@@ -787,6 +843,7 @@ new_data</code></pre>
 ##  8      7                0.151 
 ##  9      9                0.137 
 ## 10      1                0.0698</code></pre>
+<p>Additional exercises: - There is concern about unstable employment. Use the data to find the average job tenure in the current job. How does this vary by gender? What about by age? - Do public or private employees make more? (variable COWMAIN). Compare hourly earnings for workers who are in the labour force. Compare for similar aged and gender workers. - Compare unemployment rates by immigrant status.</p>
 </div>
 <div id="other-tools-with-brief-examples" class="section level2">
 <h2>Other tools (with brief examples)</h2>
@@ -854,6 +911,35 @@ new_data &lt;- inner_join(
 ## 10     9  29.5  24.9    4.57</code></pre>
 <p>Don’t worry about mastering these two. I present them so that you know that they are possibilities.</p>
 </div>
+<div id="aggregate-data-from-statistics-canada" class="section level2">
+<h2>Aggregate data from Statistics Canada</h2>
+<p>In addition to micro-data (above), Statistics Canada provides lots of aggregate data. This is available using CANSIM. You can use the R packages <code>CANSIM2R</code> to import it into R.</p>
+<pre class="r"><code># First install: install.packages(&quot;CANSIM2R&quot;)
+library(CANSIM2R)
+# Then tell R the table number.  Look this up in stats Canada&#39;s webpage (https://www150.statcan.gc.ca/n1/en/type/data)
+childcare &lt;- getCANSIM(&quot;42100005&quot;, raw=TRUE) %&gt;% as.tibble()</code></pre>
+<pre><code>## Warning: `as.tibble()` is deprecated, use `as_tibble()` (but mind the new semantics).
+## This warning is displayed once per session.</code></pre>
+<pre class="r"><code>childcare</code></pre>
+<pre><code>## # A tibble: 1,344 x 17
+##    X.U.FEFF.REF_DA~ GEO   DGUID Type.of.child.c~ Age.group Statistics UOM  
+##               &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;            &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;
+##  1             2019 Cana~ 2016~ Daycare centre,~ Overall   Number of~ Numb~
+##  2             2019 Cana~ 2016~ Daycare centre,~ Overall   Percentag~ Perc~
+##  3             2019 Cana~ 2016~ Daycare centre,~ Overall   95% confi~ Perc~
+##  4             2019 Cana~ 2016~ Daycare centre,~ Overall   95% confi~ Perc~
+##  5             2019 Cana~ 2016~ Daycare centre,~ Children~ Number of~ Numb~
+##  6             2019 Cana~ 2016~ Daycare centre,~ Children~ Percentag~ Perc~
+##  7             2019 Cana~ 2016~ Daycare centre,~ Children~ 95% confi~ Perc~
+##  8             2019 Cana~ 2016~ Daycare centre,~ Children~ 95% confi~ Perc~
+##  9             2019 Cana~ 2016~ Daycare centre,~ Children~ Number of~ Numb~
+## 10             2019 Cana~ 2016~ Daycare centre,~ Children~ Percentag~ Perc~
+## # ... with 1,334 more rows, and 10 more variables: UOM_ID &lt;int&gt;,
+## #   SCALAR_FACTOR &lt;chr&gt;, SCALAR_ID &lt;int&gt;, VECTOR &lt;chr&gt;, COORDINATE &lt;chr&gt;,
+## #   VALUE &lt;dbl&gt;, STATUS &lt;chr&gt;, SYMBOL &lt;lgl&gt;, TERMINATED &lt;lgl&gt;,
+## #   DECIMALS &lt;int&gt;</code></pre>
+<p>You can use the tools described above to get this into a format that you can use.</p>
+</div>
 
 
 
@@ -872,23 +958,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
