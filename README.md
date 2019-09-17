@@ -36,8 +36,8 @@ The official course syllabus is available [here](https://github.com/nicrivers/uo
 
 ## Major assignments
 
-### Proposal
+### [Proposal](https://github.com/nicrivers/uo_api_6319/blob/master/proposalGuidelines.pdf)
 
 ### Presentation
 
-### Term paper
+### [Term paper](https://github.com/nicrivers/uo_api_6319/blob/master/termPaperGuidelines.pdf)
