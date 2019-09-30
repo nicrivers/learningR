@@ -7,7 +7,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Nic Rivers" />
@@ -344,6 +343,18 @@ summary {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
 
@@ -373,7 +384,7 @@ summary {
 <h1>R Basics</h1>
 <div id="summary-of-data" class="section level2">
 <h2>Summary of data</h2>
-<p>A lot of our work will involve summarizing data. We will learn how to get data into R next class. For now, let’s work with a simple small data set that we enter directly into R. Note that you can look at your data (but not edit it) by using the View() command or else by clicking on the name of the object (dat) in the Environment window (top right of RStudio).</p>
+<p>A lot of our work will involve summarizing data. For now, let’s work with a simple small data set that we enter directly into R. Note that you can look at your data (but not edit it) by using the View() command or else by clicking on the name of the object (dat) in the Environment window (top right of RStudio).</p>
 <pre class="r"><code>dat = data.frame(name = c(&quot;Abel&quot;, &quot;Bob&quot;, &quot;Carla&quot;, &quot;Darren&quot;, &quot;Elisabeth&quot;, &quot;Felicity&quot;, &quot;Gary&quot;, &quot;Helen&quot;, &quot;Icarus&quot;, &quot;Jenny&quot;),
                  height = c(171, 178, 161, 166, 163, 157, 174, 170, 183, 160),
                  sex = c(&quot;M&quot;, &quot;M&quot;, &quot;F&quot;, &quot;M&quot;, &quot;F&quot;, &quot;F&quot;, &quot;M&quot;, &quot;F&quot;, &quot;M&quot;, &quot;F&quot;))
@@ -405,7 +416,7 @@ dat # look at the data frame</code></pre>
 ##  Elisabeth:1   3rd Qu.:173.2        
 ##  Felicity :1   Max.   :183.0        
 ##  (Other)  :4</code></pre>
-<p>Notice how we can’t get the mean for the variables name or sex. These are categorical variables, and it’s not meaningful to get the mean of a categorical variable. We <em>can</em> create a dummy variable though, which allows us to summarise a categorical variable. Here I show how to create a dummy variable for female. The variable is TRUE (=1) if sex equals “F” and FALSE (=0) otherwise. Once we create this variable, we can take the mean. We can also do this with other variables (illustrated below). This is a trick we will use lots over the semester, because working with continuous variables is much more convenient that working with categorical variables.</p>
+<p>Notice how we can’t get the mean for the variables name or sex. These are categorical variables, and it’s not meaningful to get the mean of a categorical variable. We <em>can</em> create a dummy variable though, which allows us to summarise a categorical variable. Here we a dummy variable for female. The variable is TRUE (=1) if sex equals “F” and FALSE (=0) otherwise. Once we create this variable, we can take the mean. We can also do this with other variables (illustrated below). This is a trick we will use lots over the semester, because working with continuous variables is much more convenient that working with categorical variables (in particular, we can take the mean).</p>
 <pre class="r"><code>dat$female = as.numeric(dat$sex == &quot;F&quot;)
 dat$helen = as.numeric(dat$name == &quot;Helen&quot;)
 summary(dat)</code></pre>
@@ -420,10 +431,90 @@ summary(dat)</code></pre>
 <p>In addition to finding the mean of a variable, we can obtain information about how spread out the variable is around the mean. The usual measure of the distribution of a variable is the “standard deviation”. The standard amount of deviation, formally, is the square root of the average squared deviation from the sample mean. Less formally, it is the typical distance from each observation to the mean.</p>
 <pre class="r"><code>sd(dat$height)</code></pre>
 <pre><code>## [1] 8.407008</code></pre>
-<p>We can see this in the following figure. <img src="data:image/png;base64,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" width="672" /></p>
-<div id="inference" class="section level3">
-<h3>Inference</h3>
-<p>Are males taller than females in the population? In the <em>sample</em> they are:</p>
+<p>We can see this in the following figure, where the dots indicate observations, and the red lines show the standard deviation. <img src="data:image/png;base64,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" width="672" /></p>
+</div>
+<div id="inference" class="section level2">
+<h2>Inference</h2>
+<div id="univariate-inference" class="section level3">
+<h3>Univariate inference</h3>
+<p>Let’s look at voting data. Recent federal polls are available <a href="https://newsinteractives.cbc.ca/elections/poll-tracker/canada/">here</a>. In a recent poll of 1,200 Canadians, 33% indicated that they would vote Liberal. The poll reports that the “Margin of error” is +/-2.8%, 19 times out of 20 (note the poll emphasizes the potential for making an error by extrapolating from a sample to the population? This is inference.). How did they come up with this? It is just a 95% confidence interval. They calculate it by finding the standard error. We can do the same.</p>
+<pre class="r"><code># First let&#39;s create the data.  Use the rep() function (repeat), and use 1 for liberal, and 0 for other.
+lib &lt;- c(rep(1, 0.33*1200), 
+         rep(0, (1-0.33)*1200))
+# Remeber the standard error is the standard deviation over the sqrt of the sample size
+s.e. &lt;- sd(lib) / sqrt(length(lib))
+# A 95% confidence interval is 1.96 times the s.e. in each direction
+c.i. &lt;- 1.96 * s.e.
+# Now let&#39;s display nicely (you&#39;ll need to install the scales package if you haven&#39;t already)
+library(scales)</code></pre>
+<pre><code>## Warning: package &#39;scales&#39; was built under R version 3.5.2</code></pre>
+<pre class="r"><code>print(paste(&quot;The margin of error is&quot;, percent(c.i.)))</code></pre>
+<pre><code>## [1] &quot;The margin of error is 2.66%&quot;</code></pre>
+<p>One important question about polling is whether the poll respondents are a <em>random</em> sample of the population (i.e., do people who respond to polls represent the average Canadian)?</p>
+<p>You can also try <code>t.test(lib)</code> or <code>lm(lib ~ 1)</code>. These produce the same answer, but display it slightly differently.</p>
+<p>Let’s look at another example – using data on alcohol consumption from the Canadian Community Health Survey. We have a random sample of Canadians and their self-reported weekly alcohol consumption.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages ---------------------------------------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## v ggplot2 3.1.1       v purrr   0.3.2  
+## v tibble  2.1.1       v dplyr   0.8.0.1
+## v tidyr   0.8.3       v stringr 1.4.0  
+## v readr   1.3.1       v forcats 0.4.0</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;tibble&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;readr&#39; was built under R version 3.5.2</code></pre>
+<pre><code>## Warning: package &#39;purrr&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;stringr&#39; was built under R version 3.5.2</code></pre>
+<pre><code>## Warning: package &#39;forcats&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+## x readr::col_factor() masks scales::col_factor()
+## x purrr::discard()    masks scales::discard()
+## x dplyr::filter()     masks stats::filter()
+## x dplyr::lag()        masks stats::lag()</code></pre>
+<pre class="r"><code>alc = read_csv(&quot;cchs-82M0013-E-2015-2016-Annual-component/cchs-82M0013-E-2015-2016-Annual-component_F1.csv&quot;) %&gt;%
+  select(ALWDVWKY) %&gt;%
+  filter(ALWDVWKY != 996,
+         ALWDVWKY != 999)</code></pre>
+<pre><code>## Warning: Missing column names filled in: &#39;X2&#39; [2]</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   ALWDVWKY = col_double(),
+##   X2 = col_logical()
+## )</code></pre>
+<pre class="r"><code>dd = alc %&gt;%
+  summarise(average = mean(ALWDVWKY),
+            s.d. = sd(ALWDVWKY),
+            count = n()) %&gt;%
+  mutate(s.e. = s.d. / sqrt(count))
+dd</code></pre>
+<pre><code>## # A tibble: 1 x 4
+##   average  s.d. count   s.e.
+##     &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;  &lt;dbl&gt;
+## 1    4.25  7.47 80256 0.0264</code></pre>
+<p>This result says that the average number of drinks per week in the sample is 4.25. Since we have a random sample, this is also our best guess for the average number of drinks in the population. However, we know that there is some potential for error in our inference. The standard error quantifies the error in our inference. It says that, given the sample size and the amount of variance in the data, we should expect a “standard” error of 0.03 drinks per week. So we have a pretty accurate estimate. For example, it looks like we could rule out the possibility that in the real population the number of drinks per weeks is 8 (this is way outside the “standard” amount of error we expect) or 2.</p>
+<p>We can also get these estimates using the <code>lm</code> approach, as above. Here, we are not comparing males and females, but just studying the whole population (we use <code>~ 1</code> to indicate an intercept). See how the results are identical to those above.</p>
+<pre class="r"><code>m2 &lt;- lm(ALWDVWKY ~ 1, data=alc)
+summary(m2)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = ALWDVWKY ~ 1, data = alc)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+##  -4.252  -4.252  -2.252   1.748 163.748 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  4.25166    0.02637   161.2   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 7.47 on 80255 degrees of freedom</code></pre>
+</div>
+<div id="bivariate-inference" class="section level3">
+<h3>Bivariate inference</h3>
+<p>Are males taller than females in the population? In our <em>sample</em> they are:</p>
 <pre class="r"><code>library(tidyverse)
 dat %&gt;%
   group_by(sex) %&gt;%
@@ -454,91 +545,7 @@ summary(m1)</code></pre>
 ## Residual standard error: 5.745 on 8 degrees of freedom
 ## Multiple R-squared:  0.585,  Adjusted R-squared:  0.5331 
 ## F-statistic: 11.28 on 1 and 8 DF,  p-value: 0.009962</code></pre>
-<p>How do we interpret? We are interested in the coefficient on <code>female</code>. This coefficient is -12.2, which says that females are 12.2cm shorter on average than males in our data. Given that we have a random sample, this is our best guess for the difference in heights in males and females in the population, too. The Standard error is 3.6cm, which means that we can expect out conclusion to be wrong by about this amount. We know from the normal distribution that 95% of the time, the true mean will be within 1.96 standard errors of the sample mean, so we think the true effect of being a female on height is from -19.256 to -5.144cm. Note that this interval does not include 0. That is, we are more than 95% sure that females are shorter than males (in the population). This is why R puts two little <code>**</code> beside the coefficient (see notes below the table). The “t-value” is -3.4, which indicates that the null hypothesis (0) is 3.4 standard errors away from the sample mean. We typically reject the null hypothesis if it is more than 1.96 standard errors away from the sample mean. The “p-value” is the probability that the null hypothesis is true, given the data. It is less than 0.05, indicating again that we reject the null hypothesis (with 95% confidence – i.e., less that 5% chance that it could actually be true).</p>
-<p>Let’s look at another example – using data on alcohol consumption from the Canadian Community Health Survey. We have a random sample of Canadians and their self-reported weekly alcohol consumption.</p>
-<pre class="r"><code>dat = read_csv(&quot;cchs-82M0013-E-2015-2016-Annual-component/cchs-82M0013-E-2015-2016-Annual-component_F1.csv&quot;) %&gt;%
-  select(ALWDVWKY) %&gt;%
-  filter(ALWDVWKY != 996,
-         ALWDVWKY != 999)</code></pre>
-<pre><code>## Warning: Missing column names filled in: &#39;X2&#39; [2]</code></pre>
-<pre><code>## Parsed with column specification:
-## cols(
-##   ALWDVWKY = col_double(),
-##   X2 = col_logical()
-## )</code></pre>
-<pre class="r"><code>dd = dat %&gt;%
-  summarise(average = mean(ALWDVWKY),
-            s.d. = sd(ALWDVWKY),
-            count = n()) %&gt;%
-  mutate(s.e. = s.d. / sqrt(count))
-dd</code></pre>
-<pre><code>## # A tibble: 1 x 4
-##   average  s.d. count   s.e.
-##     &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;  &lt;dbl&gt;
-## 1    4.25  7.47 80256 0.0264</code></pre>
-<p>This result says that the average number of drinks per week in the sample is 4.25. Since we have a random sample, this is also our best guess for the average number of drinks in the population. However, we know that there is some potential for error in our inference. The standard error quantifies the error in our inference. It says that, given the sample size and the amount of variance in the data, we should expect a “standard” error of 0.03 drinks per week. So we have a pretty accurate estimate. For example, it looks like we could rule out the possibility that in the real population the number of drinks per weeks is 8 (this is way outside the “standard” amount of error we expect) or 2.</p>
-<p>We can also get these estimates using the <code>lm</code> approach, as above. Here, we are not comparing males and females, but just studying the whole population (we use <code>~ 1</code> to indicate an intercept). See how the results are identical to those above.</p>
-<pre class="r"><code>m2 &lt;- lm(ALWDVWKY ~ 1, data=dat)
-summary(m2)</code></pre>
-<pre><code>## 
-## Call:
-## lm(formula = ALWDVWKY ~ 1, data = dat)
-## 
-## Residuals:
-##     Min      1Q  Median      3Q     Max 
-##  -4.252  -4.252  -2.252   1.748 163.748 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  4.25166    0.02637   161.2   &lt;2e-16 ***
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Residual standard error: 7.47 on 80255 degrees of freedom</code></pre>
-<p>We turn to voter polling for another example. Let’s imagine that we have a poll of 1,000 people, which is a random sample of the population. In the poll, 33% of people indicate they will vote Liberal, 36% indicate they will vote Conservative, and the remainder indicate they will vote for some other party.</p>
-<pre class="r"><code>poll_size &lt;- 1000 # number of respondents
-poll &lt;- tibble(
-  party = c(rep(&quot;Conservative&quot;, poll_size*.36),
-            rep(&quot;Liberal&quot;, poll_size*.33),
-            rep(&quot;Other&quot;, round(poll_size * (1 - .33 - .36), 0 ))
-  )
-)</code></pre>
-<p>Let’s get a 95% confidence interval around the conservative vote share:</p>
-<pre class="r"><code>poll_sum &lt;- poll %&gt;%
-  # Make a dummy variable
-  mutate(conservative = as.numeric(party == &quot;Conservative&quot;)) %&gt;%
-  # Summarise the poll
-  summarise(mean_cons_share = mean(conservative),
-            sd_cons_share = sd(conservative),
-            count_voters = n()) %&gt;%
-  mutate(se_cons_share = sd_cons_share / sqrt(count_voters) )
-poll_sum</code></pre>
-<pre><code>## # A tibble: 1 x 4
-##   mean_cons_share sd_cons_share count_voters se_cons_share
-##             &lt;dbl&gt;         &lt;dbl&gt;        &lt;int&gt;         &lt;dbl&gt;
-## 1            0.36         0.480         1000        0.0152</code></pre>
-<p>We can also get this using the <code>lm</code> function:</p>
-<pre class="r"><code>m_poll &lt;- lm(conservative ~ 1, data=poll %&gt;%
-               mutate(conservative = as.numeric(party == &quot;Conservative&quot;)))
-summary(m_poll)</code></pre>
-<pre><code>## 
-## Call:
-## lm(formula = conservative ~ 1, data = poll %&gt;% mutate(conservative = as.numeric(party == 
-##     &quot;Conservative&quot;)))
-## 
-## Residuals:
-##    Min     1Q Median     3Q    Max 
-##  -0.36  -0.36  -0.36   0.64   0.64 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  0.36000    0.01519    23.7   &lt;2e-16 ***
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Residual standard error: 0.4802 on 999 degrees of freedom</code></pre>
-<p>A 95% confidence interval can be constructed as the mean plus or minus 1.96 times the standard error. Notice the equivalence to the “margin of error” reported in every poll.</p>
-<p>Excercise: A majority government in Canada is typically considered to be possible at a 40% popular vote. What is the probability of a conservative majority, given the data?</p>
+<p>How do we interpret? We are interested in the coefficient on <code>female</code>. This coefficient is -12.2, which says that females are 12.2cm shorter on average than males in our data. Given that we have a random sample, this is our best guess for the difference in heights in males and females in the population, too. The Standard error is 3.6cm, which means that we can expect out conclusion to be wrong by about this amount. We know from the normal distribution that 95% of the time, the true mean will be within 1.96 standard errors of the sample mean, so we think the true effect of being a female on height is from -19.256 to -5.144cm. Note that this interval does not include 0. That is, we are more than 95% sure that females are shorter than males (in the population). This is why R puts two little <code>**</code> beside the coefficient (see notes below the table). The “t-value” is -3.4, which indicates that the null hypothesis (0) is 3.4 standard errors away from the sample mean. We typically reject the null hypothesis if it is more than 1.96 standard errors away from the sample mean. The “p-value” is the probability that the null hypothesis is true, given the data. It is less than 0.05, indicating again that we reject the null hypothesis (with 95% confidence – i.e., less that 5% chance that it could actually be true). The p.value is about 1%, indicating that, given the data, there is about a 1% probability that the null hypothesis is actually correct. This is a really small chance, so typically we would reject the null hypothesis (that males and females are equal height).</p>
 </div>
 </div>
 </div>
@@ -560,23 +567,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
