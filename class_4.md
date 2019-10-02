@@ -18,6 +18,9 @@ These topics are covered in:
 *Lab*
 - [We will review these concepts in class](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_4.html).
 
+*Slides*
+- Slides are [here](https://github.com/nicrivers/uo_api_6319/raw/master/lecture4.pdf)
+
 *Homework*
 - Download the 2016 Canadian Census PUMF Individuals file from ODESI.  Note that the Census PUMF includes records covering about 2.7% of the population in 2016.
 - Filter the data so that it excludes non-permanent residents and people who do not declare their immigration status.
