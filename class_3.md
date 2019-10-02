@@ -17,6 +17,9 @@ We will talk about how to visualize data, and the appropriate types of visualiza
     * Graph the average male and female hourly wage for individuals from 25 to 34 years old with a Bachelor's degree or above who are employed and at work, according to their occupation (NOC_10).
     * Graph the average wage according to the amount of eduction the responded has, for males between 35 and 44.  Facet the graph by province.
 
+*Slides*
+- Slides are [here](https://github.com/nicrivers/uo_api_6319/raw/master/class3.pdf)
+
 *Homework*
 - Obtain the 2015/16 General Social Survey from ODESI.
 - Make a plot that illustrates the average subjective well-being (SLM_01) for males and females by age, such that it is possible to compare between males and females.
