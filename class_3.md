@@ -27,6 +27,9 @@ We will talk about how to visualize data, and the appropriate types of visualiza
 - Make sure that both of your plots are well-labelled and clear.
 - Submit your work in Word or HTML format, by using RMarkdown.
 
+*Solution*
+- Here is a [solution to the homework].
+
 *Additional resources*
 - [RStudio's ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 - [Examples of graphs and code to reproduce them](https://www.r-graph-gallery.com/)
