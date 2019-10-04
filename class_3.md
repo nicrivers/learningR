@@ -28,7 +28,7 @@ We will talk about how to visualize data, and the appropriate types of visualiza
 - Submit your work in Word or HTML format, by using RMarkdown.
 
 *Solution*
-- Here is a [solution to the homework](http://htmlpreview.github.io/?github.com/nicrivers/uo_api_6319/blob/master/homework_complete_week3.html).
+- Here is a [solution to the homework](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/homework_complete_week3.html).
 
 *Additional resources*
 - [RStudio's ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
