@@ -25,5 +25,5 @@ Our class this week will focus on cause and effect.  We will talk about randomiz
 - Multiple regression as a concept.
 
 *Homework*
-Research proposal.  Instructions are provided here.
+Research proposal.  Instructions are provided (here)[https://github.com/nicrivers/uo_api_6319/raw/master/proposalGuidelines.pdf].
 
