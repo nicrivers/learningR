@@ -13,6 +13,9 @@ Our class this week will focus on cause and effect.  We will talk about randomiz
 - Our lab this week will focus on choosing a research topic and an appropriate research question.
 - You should come prepared to discuss your research interests, and in particular to discuss an *empirical* research question/hypothesis that you could work on this semester.
 
+*Slides*
+- Slides for this week are [here](https://github.com/nicrivers/uo_api_6319/blob/raw/class5.pdf)
+
 *Detailed topics*
 - What is cause and effect in the social sciences?
 - Four hurdles to establishing causality
