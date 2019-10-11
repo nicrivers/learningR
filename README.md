@@ -19,7 +19,7 @@ The official course syllabus is available [here](https://github.com/nicrivers/uo
 
 ### [Class 5: Research design](https://nicrivers.github.io/uo_api_6319/class_5.html)
 
-### [Classes 6-7: Data modeling: regression #1](https://nicrivers.github.io/uo_api_6319/class_6.html)
+### [Classes 6-7: Data modeling: simple regression](https://nicrivers.github.io/uo_api_6319/class_6.html)
 
 ### [Class 7: Data modeling: regression #2](https://nicrivers.github.io/uo_api_6319/class_7.html)
 
