@@ -11,6 +11,7 @@ This class will focus on simple regression, which is used to estimate the relati
 - Kellstedt and Whitten, Chapter 8.
 
 ### Lab
+- We will [review the t-test using data on murder rates in the US](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/murderrates.csv)
 - We will [illustrate simple regression with a data set](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_6.html).
 
 ### Homework for class 6: Research design
