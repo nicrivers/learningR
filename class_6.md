@@ -13,7 +13,7 @@ This class will focus on simple regression, which is used to estimate the relati
 ### Lab
 - We will review the t-test using data on [murder rates in the US](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/murderrates.csv) and [active transport](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/active_trans.csv)
 - We will [illustrate simple regression with a data set](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_6.html).
-- Additional data sets used in class on [class sizes](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/schoolSizes.xls) and [fertility rates](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/fertility-contraception.csv)
+- Additional data sets used in class on [class sizes](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/schoolSizes.xlsx) and [fertility rates](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/fertility-contraception.csv)
 
 ### Homework for class 6: Research design
 - Economists and others have long been interested in understanding the effectiveness of official development aid (ODA).
