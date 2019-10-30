@@ -10,9 +10,12 @@ This class will focus on simple regression, which is used to estimate the relati
 ### Readings
 - Kellstedt and Whitten, Chapter 8.
 
+### Slides
+- Slides for the class are available [here](https://github.com/nicrivers/uo_api_6319/raw/master/class_6.pdf).
+
 ### Lab
 - We will review the t-test using data on [murder rates in the US](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/murderrates.csv) and [active transport](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/active_trans.csv)
-- We will [illustrate simple regression with a data set](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_6.html).
+- We will [illustrate simple regression](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_6.html) [with a data set](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/summer_2015_ontario.csv) on electricity demand and temperature in Ontario.
 - Additional data sets used in class on [class sizes](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/schoolSizes.xlsx) and [fertility rates](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/fertility-contraception.csv)
 
 ### Homework for class 6: Research design
