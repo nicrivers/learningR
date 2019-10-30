@@ -23,10 +23,6 @@ The official course syllabus is available [here](https://github.com/nicrivers/uo
 
 ### [Classes 8-9: Data modeling: multiple regression](https://nicrivers.github.io/uo_api_6319/class_7.html)
 
-### [Class 8: Data modeling: regression #3](https://nicrivers.github.io/uo_api_6319/class_8.html)
-
-### [Class 9: Data modeling: regression #4](https://nicrivers.github.io/uo_api_6319/class_9.html)
-
 ### [Class 10: Data modeling: difference-in-difference/longitudinal data](https://nicrivers.github.io/uo_api_6319/class_10.html)
 
 ### [Class 11: Novel data sources OR advanced methods](https://nicrivers.github.io/uo_api_6319/class_11.html)
