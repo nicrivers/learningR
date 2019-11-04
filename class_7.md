@@ -11,7 +11,7 @@ Multiple regression is the main tool in the toolbox of the applied empirical res
 - Kellstedt and Whitten, Chapter 9.
 
 ### Lab:
-- We will go through these [excercises](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_7.html) in class.
+- We will go through these [excercises](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_7.html) in class.  Another example of multiple regression is [here](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/week8_lab.html)
 - I have put together a short explanation to help those of you who wish to estimate models in which the dependent variable ($Y$) is discrete [here](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/limdep.html).  We may or may not have time to go through this in class.  Limited dependent variable models are explained in Chapter 11 of the text (11.1 and 11.2).
 
 ### Homework (class 8):
