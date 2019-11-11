@@ -7,7 +7,7 @@ We will understand the method, and apply it in this class.
 - [Impact Evaluation in Practice. World Bank.  Chapter 7.](http://documents.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf)
 
 ## Lab:
-- Difference-in-difference examples (traffic accidents and beer tax?)
+- We will go through an example on [minimum wage and teen employment](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/minwage_lab.html).  The data for the lab is available [here](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/minwage_data.csv).
 
 ## Homework:
 - In September 2014, Ontario finished rolling out full-day kindergarten to all schools in the province.  For this week's homework, you will assess the effect of this policy on labour force participation of mothers of young children, using a difference-in-difference research design.
