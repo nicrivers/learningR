@@ -11,7 +11,8 @@ Multiple regression is the main tool in the toolbox of the applied empirical res
 - Kellstedt and Whitten, Chapter 9.
 
 ### Slides:
-- Slides for the class are [here.](https://github.com/nicrivers/uo_api_6319/raw/master/class7.pdf)
+- Slides for the class are [here.](https://github.com/nicrivers/uo_api_6319/raw/master/class7.pdf).
+- R code from the class is [here.](https://github.com/nicrivers/uo_api_6319/raw/master/nov_12_2019_class.R).
 
 ### Lab:
 - We will go through these [excercises](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/R_session_7.html) in class.  Another example of multiple regression is [here](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/week9_lab.html) using [this data](https://github.com/nicrivers/uo_api_6319/raw/master/small_gss2015.csv)
