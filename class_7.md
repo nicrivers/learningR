@@ -36,5 +36,5 @@ Multiple regression is the main tool in the toolbox of the applied empirical res
     - Focus on the relationship between junk food bans and BMI for the population 12-17 only (this is the student population).
     - Try to use multiple regression to account for confounding variables as best you can.
     - You cannot replicate the regression in the article exactly for at least a couple of reasons.  (1) you are using the *public use* files, rather than the *restricted* files, which means that you don't know the respondent's exact age, (2) you are only using one wave of the CCHS, rather than all waves since 2003.
-    - Report your analysis in properly formatted regression table(s).  You can easily produce these using the function huxreg as we discussed in class.
+    - Report your analysis in properly formatted regression table(s).  You can easily produce these using the function huxreg as we discussed in class. (If huxreg isn't working, just use summary()).
 - After running your analysis, explain briefly whether the regression results you find reflect the causal effect of junk food bans on BMI.
