@@ -31,7 +31,7 @@ Multiple regression is the main tool in the toolbox of the applied empirical res
 - Explain the research design used in the paper to understand whether school junk food bans affect body mass index.  In particular, explain intuitively how the authors try to find the causal effect of junk food bans on student health (what is the implicit comparison being used?)
 - Explain whether you think that the authors succeed in finding the causal effect of junk food bans on health.
 - Using the 2015/16 Canadian Community Health Survey, conduct a multiple regression analysis to see if you can find the effect of junk food bans (X) on student health (Y).  Like the article, use BMI as a proxy for health.  A few hints:
-    - You will need to create variable for junk food bans.  You can find the information you require to create this variable on p.106 of the article.
+    - You will need to create variable for junk food bans.  You can find the information you require to create this variable on p.106 of the article.  To create a new variable, you can use mutate().  To create a variable conditional on another variable, you can look at the [advice given here](https://stackoverflow.com/questions/22337394/dplyr-mutate-with-conditional-values).
     - There are a number of variables that measure BMI.  For your analysis, focus on the variable called HWTDGBMI.  Make sure you read the codebook to understand valid responses for this variable.
     - Focus on the relationship between junk food bans and BMI for the population 12-17 only (this is the student population).
     - Try to use multiple regression to account for confounding variables as best you can.
