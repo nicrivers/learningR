@@ -6,6 +6,9 @@ We will understand the method, and apply it in this class.
 ## Readings:
 - [Impact Evaluation in Practice. World Bank.  Chapter 7.](http://documents.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf)
 
+## Slides:
+- Here are the [slides for the class](https://github.com/nicrivers/uo_api_6319/raw/master/panel.pdf). The example uses [this data set](https://github.com/nicrivers/uo_api_6319/raw/master/usfatalities.csv).
+
 ## Lab:
 - We will go through an example on [minimum wage and teen employment](http://htmlpreview.github.io/?https://github.com/nicrivers/uo_api_6319/blob/master/minwage_lab.html).  The data for the lab is available [here](https://raw.githubusercontent.com/nicrivers/uo_api_6319/master/minwage_data.csv).
 
