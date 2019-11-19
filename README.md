@@ -34,6 +34,6 @@ The official course syllabus is available [here](https://github.com/nicrivers/uo
 
 ### [Proposal](https://github.com/nicrivers/uo_api_6319/raw/master/proposalGuidelines.pdf)
 
-### Presentation
+### [Presentation](https://github.com/nicrivers/uo_api_6319/raw/master/presoutline.pdf)
 
 ### [Term paper](https://github.com/nicrivers/uo_api_6319/raw/master/termPaperGuidelines.pdf)
