@@ -29,7 +29,7 @@ Slides are available [here](https://github.com/nicrivers/uo_api_6319/blob/master
 
 *Homework*
 
-Submit a Word or HTML document that you create in RStudio using RMarkdown that does the following:
+Submit a Word or HTML document that you create in RStudio using Quarto that does the following:
 1. Creates a data frame with data for: (see table below)
     a. The population of each province in 2022.
     b. The rate of opiod-related deaths measured in number of deaths per 100,000 people in each province in 2022.
