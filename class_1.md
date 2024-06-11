@@ -6,8 +6,8 @@ layout: null
 Our class this week will include some discussion of what to expect during the course, including how to prepare for classes, assessment methods, topics, software, etc.  We will also discuss quantitative research, talk about cause and effect, and discuss what types of research questions it is possible to answer with the methods and research designs we will cover in the class.
 
 *Readings*
-- Kellstedt and Whitten, Ch. 1
-- [R4DS](https://r4ds.had.co.nz/), Ch. 4 and 6
+- [The Effect](https://www.theeffectbook.net/index.html), Ch. 1 and 2
+- [R4DS](https://r4ds.hadley.nz/), Ch. 2 and 6
 
 *To do before class*
 - Install R ([link](https://cloud.r-project.org/))
@@ -37,7 +37,7 @@ Submit a Word or HTML document that you create in RStudio using RMarkdown that d
 3. Finds the total number of opioid-related deaths in all of Canada (excluding the territories) in 2017.
 
 | Province | Population | Opiod death rate per 100,000 people |
-|----------|------------|-------------------------------------|
+|:--------:|-----------:|------------------------------------:|
 |    NL    | 528,817    | 16.6                                |
 |    PE    | 152,021    | 9.5                                 |
 |    NS    | 953,869    | 8.4                                 |
