@@ -31,10 +31,10 @@ Slides are available [here](https://github.com/nicrivers/uo_api_6319/blob/master
 
 Submit a Word or HTML document that you create in RStudio using RMarkdown that does the following:
 1. Creates a data frame with data for: (see table below)
-    a. The population of each province in 2017.
-    b. The rate of opiod-related deaths measured in number of deaths per 100,000 people in each province in 2017.
-2. Finds the total number of opiod-related deaths in each province in 2017.
-3. Finds the total number of opioid-related deaths in all of Canada (excluding the territories) in 2017.
+    a. The population of each province in 2022.
+    b. The rate of opiod-related deaths measured in number of deaths per 100,000 people in each province in 2022.
+2. Finds the total number of opiod-related deaths in each province in 2022.
+3. Finds the total number of opioid-related deaths in all of Canada (excluding the territories) in 2022.
 
 | Province | Population | Opiod death rate per 100,000 people |
 |:--------:|-----------:|------------------------------------:|
